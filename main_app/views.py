@@ -205,100 +205,100 @@ def CustEneCheck(request):
 
 # Mahindra Tractors
 def MD_245DI_ORC(request):
-	return render(request,'Nandi/tractors/Mahindra/245 DI Orchard.html',{})
+	return render(request,'Nandi/tractors/Mahindra/245-DI-Orchard.html',{})
 
 def MD_255DI_PP(request):
-	return render(request,'Nandi/tractors/Mahindra/255 DI Power Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/255-DI-Power-Plus.html',{})
 
 def MD_265DI_PP(request):
-	return render(request,'Nandi/tractors/Mahindra/265 DI Power Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/265-DI-Power-Plus.html',{})
 
 def MD_265DI(request):
-	return render(request,'Nandi/tractors/Mahindra/265 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/265-DI.html',{})
 
 def MD_275DI_ECO(request):
-	return render(request,'Nandi/tractors/Mahindra/275 DI ECO.html',{})
+	return render(request,'Nandi/tractors/Mahindra/275-DI-ECO.html',{})
 
 def MD_275DI_TU(request):
-	return render(request,'Nandi/tractors/Mahindra/275 DI TU.html',{})
+	return render(request,'Nandi/tractors/Mahindra/275-DI-TU.html',{})
 
 def MD_275DI_XP_Plus(request):
-	return render(request,'Nandi/tractors/Mahindra/275 DI XP Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/275-DI-XP-Plus.html',{})
 
 def MD_415DI(request):
-	return render(request,'Nandi/tractors/Mahindra/415 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/415-DI.html',{})
 
 def MD_475DI_XP_Plus(request):
-	return render(request,'Nandi/tractors/Mahindra/475 DI XP Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/475-DI-XP-Plus.html',{})
 
 def MD_475DI_SP(request):
 	return render(request,'Nandi/tractors/Mahindra/475-di-sp-plus.html',{})
 
 def MD_475DI(request):
-	return render(request,'Nandi/tractors/Mahindra/475 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/475-DI.html',{})
 
 def MD_555DI_PP(request):
-	return render(request,'Nandi/tractors/Mahindra/555 DI Power Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/555-DI-Power-Plus.html',{})
 
 def MD_575DI_XP_Plus(request):
-	return render(request,'Nandi/tractors/Mahindra/575 DI XP Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/575-DI-XP-Plus.html',{})
 
 def MD_575DI(request):
-	return render(request,'Nandi/tractors/Mahindra/575 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/575-DI.html',{})
 
 def MD_585DI_XP_Plus(request):
-	return render(request,'Nandi/tractors/Mahindra/585 DI XP Plus.html',{})
+	return render(request,'Nandi/tractors/Mahindra/585-DI-XP-Plus.html',{})
 
 def MD_585DI(request):
-	return render(request,'Nandi/tractors/Mahindra/585 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/585-DI.html',{})
 
 def MD_595DI(request):
-	return render(request,'Nandi/tractors/Mahindra/595 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/595-DI.html',{})
 
 def MD_Arj_555DI(request):
-	return render(request,'Nandi/tractors/Mahindra/Arjun 555 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Arjun-555-DI.html',{})
 
 def MD_Arj_605DI_Ultra(request):
-	return render(request,'Nandi/tractors/Mahindra/Arjun 605 DI Ultra - 1.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Arjun-605-DI-Ultra-1.html',{})
 
 def MD_Arj_605DI_i_4WD(request):
-	return render(request,'Nandi/tractors/Mahindra/Arjun Novo 605 DI-i-4WD.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Arjun-Novo-605-DI-i-4WD.html',{})
 
 def MD_Arj_605DI_i_AC(request):
-	return render(request,'Nandi/tractors/Mahindra/Arjun Novo 605 DI-i-with AC Cabin.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Arjun-Novo-605-DI-i-with-AC-Cabin.html',{})
 
 def MD_Arj_605DI_MS(request):
-	return render(request,'Nandi/tractors/Mahindra/Arjun Novo 605 DI-MS.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Arjun-Novo-605-DI-MS.html',{})
 
 def MD_Arj_605DI_PS(request):
-	return render(request,'Nandi/tractors/Mahindra/Arjun Novo 605 DI-PS.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Arjun-Novo-605-DI-PS.html',{})
 
 def MD_JIVO_225DI(request):
-	return render(request,'Nandi/tractors/Mahindra/JIVO 225 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/JIVO-225-DI.html',{})
 
 def MD_JIVO_245DI(request):
-	return render(request,'Nandi/tractors/Mahindra/JIVO 245 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/JIVO-245-DI.html',{})
 
 def MD_JIVO_365DI(request):
-	return render(request,'Nandi/tractors/Mahindra/JIVO 365DI 4WD.html',{})
+	return render(request,'Nandi/tractors/Mahindra/JIVO-365DI-4WD.html',{})
 
 def MD_NOVO_655DI(request):
-	return render(request,'Nandi/tractors/Mahindra/Novo 655DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Novo-655DI.html',{})
 
 def MD_NOVO_755DI(request):
-	return render(request,'Nandi/tractors/Mahindra/Novo 755 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Novo-755-DI.html',{})
 
 def MD_YUVO_265DI(request):
-	return render(request,'Nandi/tractors/Mahindra/Yuvo 265 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Yuvo-265-DI.html',{})
 
 def MD_YUVO_415DI(request):
-	return render(request,'Nandi/tractors/Mahindra/YUVO 415 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/YUVO-415-DI.html',{})
 
 def MD_YUVO_475DI(request):
-	return render(request,'Nandi/tractors/Mahindra/YUVO 475 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/YUVO-475-DI.html',{})
 
 def MD_YUVO_575DI(request):
-	return render(request,'Nandi/tractors/Mahindra/Yuvo 575 DI.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Yuvo-575-DI.html',{})
 
 def MD_YUVO_275DI(request):
 	return render(request,'Nandi/tractors/Mahindra/yuvo-275DI.html',{})
@@ -307,149 +307,146 @@ def MD_YUVO_575DI_4WD(request):
 	return render(request,'Nandi/tractors/Mahindra/yuvo-575DI-4WD.html',{})
 
 def MD_YUVRAJ_215_NXT(request):
-	return render(request,'Nandi/tractors/Mahindra/Yuvraj 215 NXT.html',{})
+	return render(request,'Nandi/tractors/Mahindra/Yuvraj-215-NXT.html',{})
 
 
 #Swaraj Tractors
 def SJ_717(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 717.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-717.html',{})
 
 def SJ_724_XM_ORC_NT(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 724 XM Orchard NT.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-724-XM-Orchard-NT.html',{})
 
 def SJ_724_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 724 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-724-XM.html',{})
 
 def SJ_735_FE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 735 FE.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-735-FE.html',{})
 
 def SJ_735_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 735 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-735-XM.html',{})
 
 def SJ_735_XT(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 735 XT.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-735-XT.html',{})
 
 def SJ_742_FE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 742 FE.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-742-FE.html',{})
 
 def SJ_742_XT(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 742 XT.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-742-XT.html',{})
 
 def SJ_744_FE_PE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 744 FE Potato Expert.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-744-FE-Potato-Expert.html',{})
 
 def SJ_744_FE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 744 FE.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-744-FE.html',{})
 
 def SJ_744_XT(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 744 XT.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-744-XT.html',{})
 
 def SJ_825_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 825 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-825-XM.html',{})
 
 def SJ_834_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 834 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-834-XM.html',{})
 
 def SJ_841_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 841 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-841-XM.html',{})
 
 def SJ_843_XM_OSM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 843 XM OSM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-843-XM-OSM.html',{})
 
 def SJ_843_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 843 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-843-XM.html',{})
 
 def SJ_855_FE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 855 FE.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-855-FE.html',{})
 
 def SJ_855_XM(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 855 XM.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-855-XM.html',{})
 
 def SJ_960_FE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 960 FE.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-960-FE.html',{})
 
 def SJ_963_FE(request):
-	return render(request,'Nandi/tractors/Swaraj/Swaraj 963 FE.html',{})
+	return render(request,'Nandi/tractors/Swaraj/Swaraj-963-FE.html',{})
 
 
 #Massey Tractors
 def MF_1030_DI_MS(request):
-	return render(request,'Nandi/tractors/Massey/1030 DI Mahashakti.html',{})
+	return render(request,'Nandi/tractors/Massey/1030-DI-Mahashakti.html',{})
 
 def MF_1035_DI_DOST(request):
-	return render(request,'Nandi/tractors/Massey/1035 DI Dost.html',{})
+	return render(request,'Nandi/tractors/Massey/1035-DI-Dost.html',{})
 
 def MF_1035_DI_MS(request):
-	return render(request,'Nandi/tractors/Massey/1035 DI Dost.html',{})
+	return render(request,'Nandi/tractors/Massey/1035-DI-Mahashakti.html',{})
 
 def MF_1035_DI_PP(request):
-	return render(request,'Nandi/tractors/Massey/1035 DI Planetary Plus.html',{})
+	return render(request,'Nandi/tractors/Massey/1035-DI-Planetary-Plus.html',{})
 
 def MF_1035_DI_TONNER(request):
-	return render(request,'Nandi/tractors/Massey/1035 DI Tonner.html',{})
+	return render(request,'Nandi/tractors/Massey/1035-DI-Tonner.html',{})
 
 def MF_1035_DI(request):
-	return render(request,'Nandi/tractors/Massey/1035 DI.html',{})
+	return render(request,'Nandi/tractors/Massey/1035-DI.html',{})
 
 def MF_1134_DI(request):
-	return render(request,'Nandi/tractors/Massey/1134 DI.html',{})
+	return render(request,'Nandi/tractors/Massey/1134-DI.html',{})
 
 def MF_241_DI_DT(request):
-	return render(request,'Nandi/tractors/Massey/241 DI Dynatech.html',{})
+	return render(request,'Nandi/tractors/Massey/241-DI-Dynatech.html',{})
 
 def MF_241_DI_MAHAAN(request):
-	return render(request,'Nandi/tractors/Massey/241 DI Mahaan.html',{})
+	return render(request,'Nandi/tractors/Massey/241-DI-Mahaan.html',{})
 
 def MF_241_DI_PP(request):
-	return render(request,'Nandi/tractors/Massey/241 DI Planetary plus.html',{})
+	return render(request,'Nandi/tractors/Massey/241-DI-Planetary-plus.html',{})
 
 def MF_241_DI_TONNER(request):
-	return render(request,'Nandi/tractors/Massey/241 DI Tonner.html',{})
+	return render(request,'Nandi/tractors/Massey/241-DI-Tonner.html',{})
 
 def MF_241_DI(request):
-	return render(request,'Nandi/tractors/Massey/241 DI.html',{})
+	return render(request,'Nandi/tractors/Massey/241-DI.html',{})
 
 def MF_245_DI(request):
-	return render(request,'Nandi/tractors/Massey/245 DI.html',{})
+	return render(request,'Nandi/tractors/Massey/245-DI.html',{})
 
 def MF_245_SMART(request):
-	return render(request,'Nandi/tractors/Massey/245 Smart.html',{})
+	return render(request,'Nandi/tractors/Massey/245-Smart.html',{})
 
 def MF_2635_4WD(request):
-	return render(request,'Nandi/tractors/Massey/2635 4WD.html',{})
+	return render(request,'Nandi/tractors/Massey/2635-4WD.html',{})
 
 def MF_5245_DI_4WD(request):
-	return render(request,'Nandi/tractors/Massey/5245 DI 4WD.html',{})
+	return render(request,'Nandi/tractors/Massey/5245-DI-4WD.html',{})
 
 def MF_5245_DI_MM(request):
-	return render(request,'Nandi/tractors/Massey/5245 DI Maha Mahaan.html',{})
+	return render(request,'Nandi/tractors/Massey/5245-DI-Maha-Mahaan.html',{})
 
 def MF_5245_DI_MM(request):
-	return render(request,'Nandi/tractors/Massey/5245 DI Maha Mahaan.html',{})
+	return render(request,'Nandi/tractors/Massey/5245-DI-Maha-Mahaan.html',{})
 
 def MF_5245_DI_PP(request):
-	return render(request,'Nandi/tractors/Massey/5245 DI Planetary Plus.html',{})
+	return render(request,'Nandi/tractors/Massey/5245-DI-Planetary-Plus.html',{})
 
 def MF_6028(request):
 	return render(request,'Nandi/tractors/Massey/6028.html',{})
 
 def MF_7250_DI_PU(request):
-	return render(request,'Nandi/tractors/Massey/7250 DI Power UP.html',{})
+	return render(request,'Nandi/tractors/Massey/7250-DI-Power-UP.html',{})
 
 def MF_7250_DI(request):
-	return render(request,'Nandi/tractors/Massey/7250 DI.html',{})
+	return render(request,'Nandi/tractors/Massey/7250-DI.html',{})
 
 def MF_9000_PP(request):
-	return render(request,'Nandi/tractors/Massey/9000 Planetary Plus.html',{})
+	return render(request,'Nandi/tractors/Massey/9000-Planetary-Plus.html',{})
 
 def MF_9500_SMART(request):
-	return render(request,'Nandi/tractors/Massey/9500 Smart.html',{})
+	return render(request,'Nandi/tractors/Massey/9500-Smart.html',{})
 
 def MF_9500_SSS(request):
-	return render(request,'Nandi/tractors/Massey/9500 Super Shuttle Series.html',{})
-
-def MF_9500_SSS(request):
-	return render(request,'Nandi/tractors/Massey/9500 Super Shuttle Series.html',{})
+	return render(request,'Nandi/tractors/Massey/9500-Super-Shuttle-Series.html',{})
 
 def MF_9500(request):
 	return render(request,'Nandi/tractors/Massey/9500.html',{})
@@ -457,145 +454,145 @@ def MF_9500(request):
 
 #Sonalika Tractors
 def SN_BBN_DI_30(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Baagban DI 30.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Baagban-DI-30.html',{})
 
 def SN_BBN_SUPER_DI_30(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Baagban Super DI 30.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Baagban-Super-DI-30.html',{})
 
 def SN_DI_35_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 35 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-35-Sikander.html',{})
 
 def SN_DI_35(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 35.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-35.html',{})
 
 def SN_DI_42_CHTPI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 42 Chatrapathi.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-42-Chatrapathi.html',{})
 
 def SN_DI_42_HDM(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 42 HDM.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-42-HDM.html',{})
 
 def SN_DI_42_Rx(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 42 Rx.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-42-Rx.html',{})
 
 def SN_DI_42_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 42 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-42-Sikander.html',{})
 
 def SN_DI_47_Rx(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 47 Rx.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-47-Rx.html',{})
 
 def SN_DI_50_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 50 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-50-Sikander.html',{})
 
 def SN_DI_52_Rx_TS(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 52 RX Tiger Series.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-52-RX-Tiger-Series.html',{})
 
 def SN_DI_60_MM_SUPER(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 60 MM Super.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-60-MM-Super.html',{})
 
 def SN_DI_60_Rx_MM_SUPER(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 60 Rx MM Super.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-60-Rx-MM-Super.html',{})
 
 def SN_DI_60_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 60 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-60-Sikander.html',{})
 
 def SN_DI_60(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 60.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-60.html',{})
 
 def SN_DI_730_II_HDM(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 730 II HDM.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-730-II-HDM.html',{})
 
 def SN_DI_734(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 734.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-734.html',{})
 
 def SN_DI_740_III(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 740 III.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-740-III.html',{})
 
 def SN_DI_745_III_CHTPI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 745 III Chhatrapati.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-745-III-Chhatrapati.html',{})
 
 def SN_DI_745_III_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 745 III Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-745-III-Sikander.html',{})
 
 def SN_DI_750_III_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 750 III Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-750-III-Sikander.html',{})
 
 def SN_DI_750_III(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika DI 750 III.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-DI-750-III.html',{})
 
 def SN_GT_20(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika GT 20.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-GT-20.html',{})
 
 def SN_GT_22(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika GT 22.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-GT-22.html',{})
 
 def SN_GT_26(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika GT 26.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-GT-26.html',{})
 
 def SN_GT_28(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika GT 28.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-GT-28.html',{})
 
 def SN_MM_35_DI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika MM 35 DI.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-MM-35-DI.html',{})
 
 def SN_MM_39_DI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika MM 39 DI.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-MM-39-DI.html',{})
 
 def SN_MM_41_DI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika MM 41 DI.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-MM-41-DI.html',{})
 
 def SN_MM_45_DI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika MM 45.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-MM-45.html',{})
 
 def SN_MM_50_DI(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika MM 50 DI.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-MM-50-DI.html',{})
 
 def SN_Rx_35_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 35 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-35-Sikander.html',{})
 
 def SN_Rx_35(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 35.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-35.html',{})
 
 def SN_Rx_42_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 42 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-42-Sikander.html',{})
 
 def SN_Rx_47_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 47 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-47-Sikander.html',{})
 
 def SN_Rx_50_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 50 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-50-Sikander.html',{})
 
 def SN_Rx_50(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 50.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-50.html',{})
 
 def SN_Rx_55_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 55 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-55-Sikander.html',{})
 
 def SN_Rx_60_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 60 Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-60-Sikander.html',{})
 
 def SN_Rx_60(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 60.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-60.html',{})
 
 def SN_Rx_745_III_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 745 III Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-745-III-Sikander.html',{})
 
 def SN_Rx_745_III(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 745 III.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-745-III.html',{})
 
 def SN_Rx_750_III_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Rx 750 III Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Rx-750-III-Sikander.html',{})
 
 def SN_WT_60_Rx_SKD(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Worldtrac 60 Rx Sikander.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Worldtrac-60-Rx-Sikander.html',{})
 
 def SN_WT_60(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Worldtrac 60.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Worldtrac-60.html',{})
 
 def SN_WT_75(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Worldtrac 75.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Worldtrac-75.html',{})
 
 def SN_WT_90(request):
-	return render(request, 'Nandi/tractors/Sonalika/Sonalika Worldtrac 90.html',{})
+	return render(request, 'Nandi/tractors/Sonalika/Sonalika-Worldtrac-90.html',{})
 
 
 
@@ -628,7 +625,7 @@ def JD_5039C(request):
 	return render(request,'Nandi/tractors/JD/5039C.html',{})
 
 def JD_5039D_PP(request):
-	return render(request,'Nandi/tractors/JD/5039D PowerPro.html',{})
+	return render(request,'Nandi/tractors/JD/5039D-PowerPro.html',{})
 
 def JD_5039D(request):
 	return render(request,'Nandi/tractors/JD/5039D.html',{})
@@ -637,13 +634,13 @@ def JD_5042C(request):
 	return render(request,'Nandi/tractors/JD/5042C.html',{})
 
 def JD_5042D_PP(request):
-	return render(request,'Nandi/tractors/JD/5042D PowerPro.html',{})
+	return render(request,'Nandi/tractors/JD/5042D-PowerPro.html',{})
 
 def JD_5042D(request):
 	return render(request,'Nandi/tractors/JD/5042D.html',{})
 
 def JD_5045D_PP(request):
-	return render(request,'Nandi/tractors/JD/5045D PowerPro.html',{})
+	return render(request,'Nandi/tractors/JD/5045D-PowerPro.html',{})
 
 def JD_5045D(request):
 	return render(request,'Nandi/tractors/JD/5045D.html',{})
@@ -676,7 +673,7 @@ def JD_5205(request):
 	return render(request,'Nandi/tractors/JD/5205.html',{})
 
 def JD_5210_GP(request):
-	return render(request,'Nandi/tractors/JD/5210 GearPro.html',{})
+	return render(request,'Nandi/tractors/JD/5210-GearPro.html',{})
 
 def JD_5210(request):
 	return render(request,'Nandi/tractors/JD/5210.html',{})
@@ -688,7 +685,7 @@ def JD_5310(request):
 	return render(request,'Nandi/tractors/JD/5310.html',{})
 
 def JD_5405_GP(request):
-	return render(request,'Nandi/tractors/JD/5405 GearPro.html',{})
+	return render(request,'Nandi/tractors/JD/5405-GearPro.html',{})
 
 def JD_6110B(request):
 	return render(request,'Nandi/tractors/JD/6110B.html',{})
@@ -700,31 +697,31 @@ def JD_6120B(request):
 
 #Force Tractors
 def F_ABHIMAN_MINI(request):
-	return render(request,'Nandi/tractors/Force/Abhiman(Mini).html',{})
+	return render(request,'Nandi/tractors/Force/Abhiman-Mini.html',{})
 
 def F_ABHIMAN(request):
 	return render(request,'Nandi/tractors/Force/Abhiman.html',{})
 
 def F_BALWAN_400(request):
-	return render(request,'Nandi/tractors/Force/Balwan 400.html',{})
+	return render(request,'Nandi/tractors/Force/Balwan-400.html',{})
 
 def F_BALWAN_550(request):
-	return render(request,'Nandi/tractors/Force/Balwan 550.html',{})
+	return render(request,'Nandi/tractors/Force/Balwan-550.html',{})
 
 def F_ORC_DLX_LT(request):
-	return render(request,'Nandi/tractors/Force/Orchard DLX LT.html',{})
+	return render(request,'Nandi/tractors/Force/Orchard-DLX-LT.html',{})
 
 def F_ORC_DLX(request):
-	return render(request,'Nandi/tractors/Force/Orchard DLX.html',{})
+	return render(request,'Nandi/tractors/Force/Orchard-DLX.html',{})
 
 def F_ORC_MINI(request):
-	return render(request,'Nandi/tractors/Force/Orchard Mini.html',{})
+	return render(request,'Nandi/tractors/Force/Orchard-Mini.html',{})
 
 def F_SANMAN_5000(request):
-	return render(request,'Nandi/tractors/Force/Sanman 5000.html',{})
+	return render(request,'Nandi/tractors/Force/Sanman-5000.html',{})
 
 def F_SANMAN_6000(request):
-	return render(request,'Nandi/tractors/Force/Sanman 6000.html',{})
+	return render(request,'Nandi/tractors/Force/Sanman-6000.html',{})
 
 
 

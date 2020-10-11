@@ -775,11 +775,15 @@ ul{
 
 .abt-text{
    position: absolute;
-   top: 35%;
+   top: 42%;
    left: 38%;
    text-align: center;
    color: white;
    font-family: 'Spartan', sans-serif;
+}
+
+.abt-text h2{
+   font-size: 36px;
 }
 
 p.card-text{
@@ -1180,8 +1184,8 @@ p.foot-abt-us{
 
 .abt-text{
    position: absolute;
-   top: 30%;
-   left: 38%;
+   top: 34%;
+   left: 40%;
    text-align: center;
    color: white;
    font-family: 'Spartan', sans-serif;
@@ -1189,7 +1193,7 @@ p.foot-abt-us{
 }
 
 .abt-text h2{
-   font-size: 35px;
+   font-size: 30px;
 }
 
 .we .row .col-lg-4{
@@ -1265,12 +1269,12 @@ p.card-text{
    font-size: 20px;
    text-align: center;
    margin-bottom: 2px;
-   line-height: 2.0;
+   line-height: 1.6;
 }
 
 .ceo .ceo-txt p span{
    font-family: 'Secular', serif;
-   font-size: 27px;
+   font-size: 25px;
 
 }
 
@@ -1562,15 +1566,15 @@ h3.foot-text{
 
 .abt-text{
    position: absolute;
-   top: 24%;
-   left: 37%;
+   top: 28%;
+   left: 39%;
    text-align: center;
    color: white;
    font-family: 'Spartan', sans-serif;
 }
 
 .abt-text h2{
-   font-size: 25px;
+   font-size: 23px;
    text-align: center;
 }
 
@@ -1601,7 +1605,7 @@ h3.foot-text{
 
 .ceo .ceo-img{
    width: 100%;
-   height: 500px;
+   height: 65vw;
    background-attachment: fixed;
    background-size: cover;
 }
@@ -1610,31 +1614,31 @@ h3.foot-text{
 .ceo .ceo-txt{
    position: absolute;
    top: 8%;
-   left: 6%;
-   right: 6%;
-   bottom: 6%;
-   text-align: center;
+   left: 0%;
+   right: 0%;
+   bottom: 8%;
+   text-align: justify;
    color: black; 
 }
 
 .ceo .ceo-txt h5{
    font-family:'PT Serif', serif;
-   font-size: 25px;
+   font-size: 20px;
    text-align: center;
    color: #1e1e1e;
 
 }
 
 .ceo .ceo-txt p{
-   font-size: 20px;
-   text-align: center;
+   font-size: 16px;
+   text-align: justify;
    margin-bottom: 2px;
-   line-height: 1.8;
+   line-height: 1.4;
 }
 
 .ceo .ceo-txt p span{
    font-family: 'Secular', serif;
-   font-size: 27px;
+   font-size: 23px;
 
 }
 
@@ -1816,7 +1820,7 @@ p.foot-abt-us{
 
 .ceo .ceo-img{
    width: 100%;
-   height: auto;
+   height: 60vw;
    background-attachment: fixed;
    background-size: cover;
 }
@@ -1825,8 +1829,8 @@ p.foot-abt-us{
 .ceo .ceo-txt{
    position: absolute;
    top: 10%;
-   left: 15%;
-   text-align: left;
+   left: 3%;
+   text-align: center;
    color: black; 
    padding-right: 20px;
 }
@@ -1834,8 +1838,11 @@ p.foot-abt-us{
 .ceo .ceo-txt p{
    font-size: 12px;
    text-align: justify;
-   justify-content: inter-word;
    margin-bottom: 2px;
+}
+
+.ceo .ceo-txt p span{
+   font-size: 15px;
 }
 
 .farm{
@@ -1924,11 +1931,15 @@ p.foot-text{
 
 .abt-text{
    position: absolute;
-   top: 20%;
+   top: 24%;
    left: 35%;
    text-align: center;
    color: white;
    font-family: 'Spartan', sans-serif;
+} 
+
+.abt-text h2{
+   font-size: 20px;
 }
 
 .foot-li{
