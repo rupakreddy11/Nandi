@@ -1,0 +1,30 @@
+{% extends 'Nandi/base.html' %}
+
+{% block pagecontent %}
+    <div class="entry-options">
+    	<div class="container">
+            <h3 class="trachead" style="padding-bottom: 10px;">Nandi Tractors</h3>
+            <h3 class="trachead" style="padding-top: 10px;">Sale Entry Forms</h3>
+    		<div class="row">
+    			<div class="col-sm-6" >
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Enrolled Customers Sale Entry Form</h5>
+                <p class="card-text">If the customer is already a enrolled customer then use this form for sale entry.</p>
+                <a href="{% url 'ene-sale-check' %}"><button class="btn btn-warning" >Click here</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Non-Enrolled Customers Sale Entry Form</h5>
+                <p class="card-text">If the customer is not a enrolled customer then use this form for sale entry.</p>
+                <a href="{% url 'non-ene-sale' %}"><button class="btn btn-warning">Click here</button></a>
+                </div>
+            </div>
+        </div>
+    		</div>
+    	</div>
+    </div>
+{% endblock %}

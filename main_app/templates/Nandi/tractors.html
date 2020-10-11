@@ -1,0 +1,1773 @@
+{% extends 'Nandi/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" >
+    <div class="carousel-item active">
+      <img src="{% static 'Images/mahind.jpg' %}" class="d-block w-100 sld1" alt="slide1">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Images/swarajslide.jpg' %}" class="d-block w-100 sld2" alt="slide2">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'Images/forceslide.png' %}" class="d-block w-100 sld3" alt="slide3">
+    </div>
+  </div>  
+</div>  
+
+  <div class="tractor-brands">
+    <h3 class="trachead">Brands</h3>
+    <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="brand">
+           <a href="#mahindra_id"><img src="{% static 'Images/mahindra.jpg' %}" class="brand-pics"></a>
+          </div>
+          </div>
+          <div class="col-2">
+            <div class="brand" >
+            <a href="#swaraj_id"><img src="{% static 'Images/swaraj.jpg' %}" class="brand-pics"></a>
+          </div>
+        </div>
+          <div class="col-2">
+            <div class="brand" >
+            <a href="#sonalika_id"><img src="{% static 'Images/sonalika.jpg' %}" class="brand-pics"></a>
+          </div>
+        </div>
+          <div class="col-2">
+            <div class="brand" >
+            <a href="#deere_id"><img src="{% static 'Images/Deere.jpg' %}" class="brand-pics"></a>
+          </div>
+        </div>
+          <div class="col-2">
+            <div class="brand" >
+            <a href="#mf_id"><img src="{% static 'Images/mf.png' %}" class="brand-pics"></a>
+          </div>
+        </div>
+          <div class="col-2">
+            <div class="brand" >
+            <a href="#force_id"><img src="{% static 'Images/force.png' %}" class="brand-pics"></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="tract">
+   	<div class="container">
+   		<h3 class="trachead" id="mahindra_id">Tractors</h3>
+   		<h4 class="trachead" >Mahindra Tractors</h4>
+   		<div class="row">
+   			<div class="col-4 col-md-4 col-sm-4">
+   				<div class="card" >
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-475-di-sp-plus.png' %}" >
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra 475DI SP Plus</h6>
+   					  <p>₹6,00,000 - ₹7,00,000</p>
+              <a href="{% url '475DI_SP_PLUS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/Yuvo575-DI.jpg' %}">
+   					<div class="card-body" >
+   					  <h6 class="txt-heads"> Mahindra Yuvo 575DI </h6>
+   					  <p>₹7,40,000 - ₹7,90,000</p>
+   					  <a href="{% url 'YUVO_575DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/yuvo275 di.png' %}" >
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra Yuvo 275DI</h6>
+   					  <p>₹5,35,000 - 5,80,000</p>
+   					  <a href="{% url 'YUVO_275DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/novo_655.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra Novo 655DI</h6>
+   					  <p>₹11,15,000 - ₹12,00,000</p>
+                <a href="{% url 'NOVO_655DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/jivo-365-di-1586084952.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra JIVO 365DI 4WD</h6>
+   					  <p>₹4,72,000 - ₹5,58,000</p>
+               <a href="{% url 'JIVO_365DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-jivo-245-di (1).jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra JIVO 245 DI</h6>
+   					  <p>₹3,86,000 - ₹4,07,000</p>
+               <a href="{% url 'JIVO_245DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-arjun-novo-605-di-ms-215193.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra Arjun Novo 605 DI-MS</h6>
+   					  <p>₹8,00,000 - ₹8,40,000</p>
+               <a href="{% url 'ARJ_NOVO_605DI_MS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/arjun-ultra-1-605-di-1594617912.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra Arjun 605 DI Ultra - 1</h6>
+   					  <p>₹7,50,000 - ₹8,00,000</p>
+               <a href="{% url 'ARJ_605DI_ULTRA'%}"> <button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/595 DI/mahindra_595_nst_gal_img1.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra 595 DI</h6>
+   					  <p>₹6,00,000 - ₹6,60,000</p>
+               <a href="{% url '595DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/585DI/mahindra_585DI_sarpanch.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra 585 DI</h6>
+   					  <p>₹6,09,000 - ₹6,56,000</p>
+               <a href="{% url '585DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/265-di-tractor.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra 265 DI</h6>
+   					  <p>₹4,58,000 - ₹4,91,000</p>
+               <a href="{% url '265DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-255-tractor.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads"> Mahindra 255 DI Power Plus</h6>
+   					  <p>₹3,70,000 - ₹4,35,000</p>
+             <a href="{% url '255DI_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/265-di-tractor.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Yuvo 265 DI</h6>
+   					  <p>₹5,50,000 - ₹5,90,00</p>
+               <a href="{% url 'YUVO_265DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-novo-755-di.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Novo 755 DI</h6>
+   					  <p>₹12,00,000 - ₹13,50,000</p>
+               <a href="{% url 'NOVO_755DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/585-di-xp-plus-1590225767.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 585 DI XP Plus</h6>
+   					  <p>₹7,00,000 - ₹7,30,000</p>
+              <a href="{% url '585DI_XP_PLUS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-575-di-xp-plus.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 575 DI XP Plus</h6>
+   					  <p>₹5,60,000 - ₹6,29,000</p>
+               <a href="{% url '575DI_XP_PLUS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		    </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/555di pp.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 555 DI Power Plus</h6>
+   					  <p>₹6,70,000 - ₹7,10,000</p>
+              <a href="{% url '555DI_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-475-di-xp-plus.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 475 DI XP Plus</h6>
+   					  <p>₹5,57,000 - ₹5,99,000</p>
+               <a href="{% url '475DI_XP_PLUS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra_265_di_pp.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 265 DI Power Plus</h6>
+   					  <p>₹4,75,000 - ₹5,09,000</p>
+                <a href="{% url '265DI_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/245-di-orchard-1586000833.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 245 DI Orchard</h6>
+   					  <p>₹3,66,000 - ₹4,03,000</p>
+              <a href="{% url '245DI_ORC'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-arjun-novo-605-di-ps.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Arjun Novo 605 DI-PS</h6>
+   					  <p>₹ 6,74,000 - ₹ 7,37,000</p>
+               <a href="{% url 'ARJ_NOVO_605DI_PS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-275-di-xp-plus.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 275 DI XP Plus</h6>
+   					  <p>₹4,97,000 - ₹5,24,000</p>
+               <a href="{% url '275DI_XP_PLUS'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra_275_di_eco_gal1.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 275 DI ECO</h6>
+   					  <p>₹4,62,000 - ₹4,99,000</p>
+              <a href="{% url '275DI_ECO'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/arjun-novo-mahindra-605-di-i.png' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Arjun Novo 605 DI-i</h6>
+   					  <p>₹8,88,000 - ₹9,69,000</p>
+             <a href="{% url 'ARJ_NOVO_605DI_i_4WD'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-605-novo-ac-cabin-tractor-500x500.jpg' %}" >
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Arjun Novo 605 DI-i A/C</h6>
+   					  <p>₹9,50,000 - ₹9,90,000</p>
+              <a href="{% url 'ARJ_NOVO_605DI_i_AC'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/575DI/mahindra_575_di.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 575 DI</h6>
+   					  <p>₹5,50,000 - ₹6,09,000</p>
+              <a href="{% url '575DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-yuvraj-215.png' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Yuvraj 215 NXT</h6>
+   					  <p>₹2,56,000 - ₹2,79,000</p>
+              <a href="{% url 'YUVRAJ_215_NXT'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-yuvo-475-di.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra YUVO 475 DI</h6>
+   					  <p>₹6,00,000 - ₹6,30,000</p>
+               <a href="{% url 'YUVO_475DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/Yuvo415_DI.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra YUVO 415 DI</h6>
+   					  <p>₹5,61,000 - ₹5,90,000</p>
+              <a href="{% url 'YUVO_415DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-jivo-225-di-400830.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra JIVO 225 DI</h6>
+   					  <p>₹2,85,000 - ₹3,45,000</p>
+              <a href="{% url 'JIVO_225DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/475_DI.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 475 DI</h6>
+   					  <p>₹5,37,000 - ₹5,88,000</p>
+              <a href="{% url 'YUVO_475DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra_new_415_DI.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 415 DI</h6>
+   					  <p>₹5,06,000 - ₹5,58,000</p>
+              <a href="{% url '415DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/Yuvo575-DI.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Yuvo 575 DI</h6>
+   					  <p>₹6,22,000 - ₹6,97,000</p>
+              <a href="{% url 'YUVO_575DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/arjun-555-di-1575110618.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra Arjun 555 DI</h6>
+   					  <p>₹7,00,000 - ₹7,50,000</p>
+              <a href="{% url 'ARJ_555DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+   				<div class="card">
+   					<img class="card-imp-top cardpic" src="{% static 'Images/Mahindra/mahindra-275-di-tu.jpg' %}">
+   					<div class="card-body">
+   					  <h6 class="txt-heads">Mahindra 275 DI TU</h6>
+   					  <p>₹4,87,000 - ₹5,34,000</p>
+               <a href="{% url '275DI_TU'%}"><button class="btn btn-outline-warning">More details</button></a>
+   					</div>
+   		        </div>
+        </div>
+    </div>
+
+
+    <!-- Massey Ferguson -->      
+
+
+
+    <div class="MF" id="mf_id">
+    <h4 class="trachead">Massey Ferguson Tractors</h4>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/9500-smart/9500smart.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 9500 Smart</h6>
+              <p>₹8,25,000 - ₹10,15,000</p>
+              <a href="{% url '9500_SMART'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/241-Dynatech/MF-241-DI.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 241 DI Dynatech</h6>
+              <p>₹7,00,000 - ₹7,10,000</p>
+              <a href="{% url '241_DI_DT'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/7250 Di Super/7250-power-up-1588156738.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 7250 DI Power UP</h6>
+              <p>₹6,45,000 - ₹6,97,000</p>
+              <a href="{% url '7250_DI_PU'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/9500/MF-9500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 9500</h6>
+              <p>₹7,10,000 - ₹8,30,000</p>
+             <a href="{% url '9500'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/9500 super shuttle/MF-9500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 9500 Super Shuttle Series</h6>
+              <p>₹7,50,000 - ₹9,00,000</p>
+              <a href="{% url '9500_SSS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-9000-planetary-plus-209777.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 9000 Planetary Plus</h6>
+              <p>₹6,25,000 - ₹7,00,000</p>
+             <a href="{% url '9000_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/7250DI.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 7250 DI</h6>
+              <p>₹6,15,000 - ₹6,75,000</p>
+            <a href="{% url '7250_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/6028/6028-3.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 6028</h6>
+              <p>₹4,79,000 - ₹5,28,000</p>
+              <a href="{% url '6028'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-5245-di-planetary-plus-v1-664678.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 5245 DI Planetary Plus</h6>
+              <p>₹6,35,000 - ₹7,30,000</p>
+             <a href="{% url '6028'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-5245-maha-mahaan-688556.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 5245 DI Maha Mahaan</h6>
+              <p>₹6,32,000 - ₹6,86,000</p>
+              <a href="{% url '5245_DI_MM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/5245 di/5245-3.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 5245 DI 4WD</h6>
+              <p>₹7,23,000 - ₹7,94,000</p>
+            <a href="{% url '5245_DI_4WD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-2635-4wd-564881.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 2635 4WD</h6>
+              <p>₹11,15,000 - ₹12,00,000</p>
+             <a href="{% url '2635_4WD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/MF-1134-DI.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 1134 DI</h6>
+              <p>₹4,72,000 - ₹5,02,000</p>
+              <a href="{% url '1134_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-1035-di-tonner.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 1035 DI Tonner</h6>
+              <p>₹5,30,000 - ₹5,49,000</p>
+              <a href="{% url '1035_DI_TONNER'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/1035-di-planetary-plus-1579762046.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 1035 DI Planetary Plus</h6>
+              <p>₹5,00,000 - ₹5,39,500</p>
+             <a href="{% url '1035_DI_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-1035-di-797167.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 1035 DI Mahashakti</h6>
+              <p>₹5,00,000 - ₹5,50,000</p>
+             <a href="{% url '1035_DI_MS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-1035-di-dost.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 1035 DI Dost</h6>
+              <p>₹4,80,000 - ₹5,40,000</p>
+             <a href="{% url '1035_DI_DOST'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-1030-di-maha-shakti-234618.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 1030 DI Mahashakti</h6>
+              <p>₹4,45,000 - ₹4,88,000</p>
+              <a href="{% url '1030_DI_MS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-smart-245-di.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 245 Smart</h6>
+              <p>₹7,50,000 - ₹7,80,000</p>
+             <a href="{% url '245_SMART'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-245-di-724720.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 245 DI</h6>
+              <p>₹6,08,000 - ₹6,57,000</p>
+           <a href="{% url '245_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-241-di-planetary-plus-502803.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MF 241 DI Planetary plus</h6>
+              <p>₹5,84,000 - ₹6,33,000</p>
+              <a href="{% url '241_DI_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/241-di-tonner-1579763223.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 241 DI Tonner</h6>
+              <p>₹5,87,000 - ₹6,15,000</p>
+             <a href="{% url '241_DI_TONNER'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-241-di-mahaan-509113.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 241 DI Mahaan</h6>
+              <p>₹5,90,000 - ₹6,60,000</p>
+              <a href="{% url '241_DI_MAHAAN'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-1035-di-797167.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 1035 DI</h6>
+              <p>₹4,94,000 - ₹5,28,000</p>
+             <a href="{% url '1035_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Massey/massey-ferguson-241-4wd-660168.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Massey Ferguson 241 DI</h6>
+              <p>₹5,92,000 - ₹6,55,000</p>
+              <a href="{% url '241_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+
+<div class="Swaraj" id="swaraj_id">
+    <h4 class="trachead">Swaraj Tractors</h4>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/744XT/744-xt.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 744 XT</h6>
+              <p>₹7,37,000 - ₹7,72,000</p>
+              <a href="{% url '744_XT'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/855 FE/855 FEE (2).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 855 FE</h6>
+              <p>₹7,13,000 - ₹7,48,000</p>
+             <a href="{% url '855_FE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/963 FE/swaraj-963-fe.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 963 FE</h6>
+              <p>₹7,87,000 - ₹8,49,000</p>
+             <a href="{% url '963_FE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/735 FE/735-fe.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 735 FE</h6>
+              <p>₹5,58,000 - ₹5,85,000</p>
+             <a href="{% url '735_FE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/960 FE/960-fe.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 960 FE</h6>
+              <p>₹7,55,000 - ₹7,85,000</p>
+              <a href="{% url '960_FE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/843 XM/swaraj-843-xm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 843 XM</h6>
+              <p>₹5,75,000 - ₹6,04,000</p>
+              <a href="{% url '843_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/843 XM OSM/swaraj-843-xm-osm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 843 XM OSM</h6>
+              <p>₹5,00,000 - ₹5,55,000</p>
+            <a href="{% url '843_XM_OSM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/841 XM/swaraj-841-xm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 841 XM</h6>
+              <p>₹5,57,000 - ₹5,82,000</p>
+             <a href="{% url '841_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/825 XM/swaraj-tractor-825-xm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 825 XM</h6>
+              <p>₹3,15,000 - ₹3,70,000</p>
+            <a href="{% url '825_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/744-fe-potato-xpert-1594285022.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 744 FE Potato Expert</h6>
+              <p>₹6,40,000 - ₹6,50,000</p>
+             <a href="{% url '744_FE_PE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/742 XT/742-xt-.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 742 XT</h6>
+              <p>₹6,50,000 - ₹6,70,000</p>
+               <a href="{% url '742_XT'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/742 FE/swaraj-742-fe.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 742 FE</h6>
+              <p>₹5,83,000 - ₹6,03,000</p>
+             <a href="{% url '742_FE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/735 XT/735-xt (3).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 735 XT</h6>
+              <p>₹5,80,000 - ₹6,30,000</p>
+             <a href="{% url '735_XT'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/735 XM/swaraj-735-xm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 735 XM</h6>
+              <p>₹5,60,000 - ₹5,90,000</p>
+             <a href="{% url '735_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+            </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/855 XM/swaraj-855-xm (2).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 855 XM</h6>
+              <p>₹7,27,000 - ₹7,62,000</p>
+               <a href="{% url '855_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/834 XM/834-XM.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 834 XM</h6>
+              <p>₹4,94,000 - ₹5,25,000</p>
+               <a href="{% url '834_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/724 XM/swaraj-724-xm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 724 XM</h6>
+              <p>₹3,74,000 - ₹4,21,000</p>
+             <a href="{% url '724_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/735 XM/swaraj-735-xm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 735 XM</h6>
+              <p>₹5,60,000 - ₹5,90,000</p>
+               <a href="{% url '735_XM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/744 FE/744 Fe (3).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 744 FE</h6>
+              <p>₹6,24,000 - ₹6,62,000</p>
+           <a href="{% url '744_FE'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+           <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/717/717-Swaraj(1).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 717</h6>
+              <p>₹ 2,55,000 - ₹ 2,89,000</p>
+             <a href="{% url '717'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+           </div>
+          <div class="col-4 col-md-4 col-sm-4">
+           <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Swaraj/724 XM Orchard NT/724 Xm Orchard (2).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Swaraj 724 XM Orchard NT</h6>
+              <p>₹3,90,000 - ₹4,10,000</p>
+              <a href="{% url '724_XM_ORC_NT'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+
+
+<div class="Sonalika" id="sonalika_id">
+    <h4 class="trachead" style="padding-top: 50px;">Sonalika Tractors</h4>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 42 Chatrapathi/sonalika-di-42.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 42 Chhatrapati</h6>
+              <p>₹5,48,000 - ₹5,85,000</p>
+            <a href="{% url 'DI_42_CHTPI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Di 745 III/sonalika-di-745-iii.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 745 III Chhatrapati</h6>
+              <p>₹5,73,000 - ₹6,24,000</p>
+             <a href="{% url 'DI_745_III_CHTPI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 47_Rx/sonalika-di-47-rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 47 Rx</h6>
+              <p>₹5,63,000 - ₹5,92,000</p>
+              <a href="{% url 'DI_47_Rx'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Worldtrac 90_Rx/sonalika-worldtrac-90.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Worldtrac 90</h6>
+              <p>₹16,00,000 - ₹17,00,000</p>
+             <a href="{% url 'WT_90'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/worldtrac_60/sonalika-worldtrac-60.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Worldtrac 60</h6>
+              <p>₹7,50,000 - ₹8,50,000</p>
+              <a href="{% url 'WT_60'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/worldtrac_60_rx/worldtrac-60-rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Worldtrac 60 Rx Sikander</h6>
+              <p>₹7,86,000 - ₹8,42,000</p>
+              <a href="{% url 'WT_60_Rx_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/world_trac_Rx_Sikander/worldtrac-60-rx-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 60 Sikander</h6>
+              <p>₹7,87,000 - ₹8,45,000</p>
+             <a href="{% url 'Rx_60_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Rx_50_Sikander/50-rx-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 50 Sikander</h6>
+              <p>₹6,21,000 - ₹6,62,000</p>
+               <a href="{% url 'Rx_50_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/upload-1597906033-0.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 47 Sikander</h6>
+              <p>₹6,38,000 - ₹6,70,000</p>
+             <a href="{% url 'Rx_47_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/RX 35 Sikander/sonalika-35-rx-sikandar.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 35 Sikander</h6>
+              <p>₹5,21,000 - ₹5,59,000</p>
+              <a href="{% url 'Rx_35_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/MM 41 DI/sonalika-mm-41-di.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika MM 41 DI</h6>
+              <p>₹5,11,000 - ₹5,48,000</p>
+              <a href="{% url 'MM_41_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/sonalika-mm-39-di.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika MM 39 DI</h6>
+              <p>₹5,21,000 - ₹5,36,000</p>
+             <a href="{% url 'MM_39_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/GT 28 Tiger/sonalika-gt-28-tiger.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika GT 28</h6>
+              <p>₹4,90,000 - ₹5,50,000</p>
+               <a href="{% url 'GT_28'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/GT 26/gt-26-rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika GT 26</h6>
+              <p>₹4,35,000 - ₹4,50,000</p>
+             <a href="{% url 'GT_26'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/GT 22/gt-22-rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika GT 22</h6>
+              <p>₹3,43,000 - ₹3,70,000</p>
+               <a href="{% url 'GT_22'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/sonalika-di-734-s1-949890.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 734</h6>
+              <p>₹4,93,000 - ₹5,26,000</p>
+              <a href="{% url 'DI_734'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Di 730 II HDM/di-730-ii-hdm.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 730 II HDM</h6>
+              <p>₹4,79,000 - ₹4,98,000</p>
+             <a href="{% url 'DI_730_II_HDM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 60/di-60.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 60</h6>
+              <p>₹7,80,000 - ₹7,90,000</p>
+              <a href="{% url 'DI_60'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 52 Rx Tiger/sonalika-52-rx-tiger.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 52 RX Tiger Series</h6>
+              <p>₹6,27,000 - ₹6,69,0000</p>
+             <a href="{% url 'DI_52_Rx_TS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 35 Sikander/sonalika-35-di-sikandar.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 35 Sikander</h6>
+              <p>₹5,08,000 - ₹5,50,000</p>
+             <a href="{% url 'DI_35_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 750 III/sonalika-di-750iii.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 745 III</h6>
+              <p>₹6,80,000 - ₹7,00,000</p>
+              <a href="{% url 'Rx_745_III'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 750 III Sikander/di-750-iii-rx-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 745 III Sikander</h6>
+              <p>₹5,84,000 - ₹6,23,000</p>
+              <a href="{% url 'Rx_745_III_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI-60 RX/sonalika-di-60-rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 60</h6>
+              <p>₹6,72,000 - ₹8,82,000</p>
+              <a href="{% url 'Rx_60'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/RX 55 Sikander/tiger-55-rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika RX 55 Sikander</h6>
+              <p>₹7,60,000 - ₹7,90,000</p>
+               <a href="{% url 'Rx_55_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/download.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 50</h6>
+              <p>₹ 6,80,000 - ₹ 7,00,000</p>
+             <a href="{% url 'Rx_50'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/RX_42_Sikander/sonalika-42-rx-sikandar.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 42 Sikander</h6>
+              <p>₹5,48,000 - ₹5,85,000</p>
+            <a href="{% url 'Rx_42_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/sonalika-di-35-rx-442455.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 35</h6>
+              <p>₹5,05,000 - ₹5,31,000</p>
+             <a href="{% url 'Rx_35'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/MM 50 DI/sonalika-mm-50.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika MM 50 DI</h6>
+              <p>₹6,27,000 - ₹6,69,000</p>
+             <a href="{% url 'MM_50_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/MM 45 DI/sonalika-mm-45-di.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika MM 45</h6>
+              <p>₹5,50,000 - ₹6,00,000</p>
+              <a href="{% url 'MM_45_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/MM 35 DI/sonalika-mm-35-di.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika MM 35 DI</h6>
+              <p>₹4,40,000 - ₹5,05,000</p>
+             <a href="{% url 'MM_35_DI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/GT 20/GT 20.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika GT 20</h6>
+              <p>₹2,95,000 - ₹3,60,000</p>
+             <a href="{% url 'GT_20'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 750 III Sikander/di-750-iii-rx-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 750 III Sikander</h6>
+              <p>₹7,39,000 - ₹7,55,000</p>
+              <a href="{% url 'DI_750_III_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 740 III S3/sonalika-di-740-iii.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 740 III</h6>
+              <p>₹5,31,000 - ₹5,70,000</p>
+              <a href="{% url 'DI_740_III'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+           <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/sonalika-di-60-sikander-60-hp-tractor-2000-kg.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 60 Sikander</h6>
+              <p>₹8,25,000 - ₹8,40,000</p>
+              <a href="{% url 'DI_60_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/sonalika-di-60-mm-super-rx-931187.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 60 Rx MM Super</h6>
+              <p>₹8,14,000 - ₹8,57,000</p>
+             <a href="{% url 'DI_60_Rx_MM_SUPER'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/sonalika-itl-launches-potato-special-tractor-range-1.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 60 MM Super</h6>
+              <p>₹6,40,000 - ₹7,00,000</p>
+             <a href="{% url 'DI_60_MM_SUPER'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Di Rx 50 Sikander/di-50-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 50 Sikander</h6>
+              <p>₹6,27,000 - ₹6,69,000</p>
+             <a href="{% url 'DI_50_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/421.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 42 Sikander</h6>
+              <p>₹5,48,000 - ₹5,85,000</p>
+              <a href="{% url 'DI_42_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/timthumb.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 42 HDM</h6>
+              <p>₹5,48,000 - ₹5,85,000</p>
+              <a href="{% url 'DI_42_HDM'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Bagbaan Super  DI 30/di-30-baagban-super.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Baagban Super DI 30</h6>
+              <p>₹4,65,000 - ₹4,75,000</p>
+              <a href="{% url 'BBN_SUPER_DI_30'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/Baagban DI 30/sonalika-di-30-baagban.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Baagban DI 30</h6>
+              <p>₹4,65,000 - ₹4,75,000</p>
+              <a href="{% url 'BBN_DI_30'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 750 III Sikander/di-750-iii-rx-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Rx 750 III Sikander</h6>
+              <p>₹6,77,000 - ₹7,11,000</p>
+               <a href="{% url 'Rx_750_III_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+          <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 745 III Sikander/sonalika-745-di-iii-sikander.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 745 III Sikander</h6>
+              <p>₹5,73,000 - ₹6,24,000</p>
+              <a href="{% url 'DI_745_III_SKD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 750 III/sonalika-di-750iii.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 750 III</h6>
+              <p>₹6,13,000 - ₹6,46,000</p>
+             <a href="{% url 'DI_750_III'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI_42rx.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 42 Rx</h6>
+              <p>₹5,36,000 - ₹5,58,000</p>
+              <a href="{% url 'DI_42_Rx'%}"><button class="btn btn-outline-warning">More details</button></a>
+          </div>
+        </div>
+      </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Sonalika/DI 35 Sikander/sonalika-di-35.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika DI 35</h6>
+              <p>₹3,95,000 - ₹4,40,000</p>
+              <a href="{% url 'DI_35'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+
+
+     <!-- John Deere -->
+     <div class="Deere" id="deere_id">
+    <h4 class="trachead" style="padding-top: 50px;">John Deere Tractors</h4>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5042D Power Pro/john-deere-5042d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5042D PowerPro </h6>
+              <p>₹6,20,000 - ₹6,51,000</p>
+               <a href="{% url '5042D_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/6120B/john-deere-6120b.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 6120B</h6>
+              <p>₹25,00,000 - ₹26,00,000</p>
+               <a href="{% url '6120B'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/6110B/6110B.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 6110B</h6>
+              <p>₹23,00,000 - ₹24,00,000</p>
+             <a href="{% url '6110B'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/john-deere-5405-gearpro.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5405 GearPro</h6>
+              <p>₹8,44,000 - ₹8,83,000</p>
+             <a href="{% url '5405_GP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5305 D/john-deere-5305.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5305D</h6>
+              <p>₹7,08,000 - ₹7,70,000</p>
+             <a href="{% url '5305D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5210/5210.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5210</h6>
+              <p>₹7,30,000 - ₹7,67,000</p>
+              <a href="{% url '5210'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5210 Gear pro/5210-gearpro.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5210 GearPro</h6>
+              <p>NA</p>
+            <a href="{% url '5210_GP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5205/john-deere-5205.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5205</h6>
+              <p>₹6,15,000 - ₹6,65,000</p>
+              <a href="{% url '5205'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5105/john-deere-5105.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5105</h6>
+              <p>₹5,30,000 - ₹5,70,000</p>
+             <a href="{% url '5105'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5065 E/john-deere-5065-e.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5065E</h6>
+              <p>₹11,10,000 - ₹12,55,000</p>
+               <a href="{% url '5065E'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5060 E/john-deere-5060-e.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5060E</h6>
+              <p>₹8,90,000 - ₹9,00,000</p>
+              <a href="{% url '5060E'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5050E/5050e-.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5050E</h6>
+              <p>₹6,85,000 - ₹7,27,000</p>
+             <a href="{% url '5050E'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5045D/JohnDeere5045D.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5045D PowerPro</h6>
+              <p>₹7,77,000 - ₹8,22,000</p>
+               <a href="{% url '5045D_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5042C/john-deere-5042c.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5042C</h6>
+              <p>₹5,25,000 - ₹5,95,000</p>
+              <a href="{% url '5042C'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5039D/john-deere-5039-d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5039D</h6>
+              <p>₹5,49,000 - ₹9,20,000</p>
+              <a href="{% url '5039D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5039 D power Pro/john-deere-5039-d-powerpro.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5039D PowerPro</h6>
+              <p>₹5,69,000 - ₹5,99,000</p>
+              <a href="{% url '5039D_PP'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5039 C/john-deere-5039c.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5039C</h6>
+              <p>₹4,90,000 - ₹5,55,000</p>
+              <a href="{% url '5039C'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5038D/john-deere-5038-d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5038D</h6>
+              <p>₹5,80,000 - ₹6,25,000</p>
+             <a href="{% url '5038D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5036C/5036C.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5036C</h6>
+              <p>₹5,10,000 - ₹5,45,000</p>
+              <a href="{% url '5036C'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5005/5005-(1).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5005</h6>
+              <p>₹4,60,000 - ₹5,06,000</p>
+              <a href="{% url '5005'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/3036 E/john-deere-3036-e.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 3036E</h6>
+              <p>₹6,00,000 - ₹6,25,000</p>
+              <a href="{% url '3036E'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/3028EN/john-deere-3028-en.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 3028EN</h6>
+              <p>₹5,90,000 - ₹6,05,000</p>
+             <a href="{% url '3028EN'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5075E/5075-e-4wd.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5075E</h6>
+              <p>₹ 12,53,000 - ₹ 13,50,000</p>
+               <a href="{% url '5075E'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5055E/john-deere-5055-e.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5055E</h6>
+              <p>₹8,50,000 - ₹9,00,000</p>
+              <a href="{% url '5055E'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5050D/john-deere-5050-d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5050D</h6>
+              <p>₹6,78,000 - ₹7,34,000</p>
+              <a href="{% url '5050D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5042D/john-deere-5042-d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5042D</h6>
+              <p>₹5,80,000 - ₹6,31,000</p>
+             <a href="{% url '5042D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5310/john-deere-5310-.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5310</h6>
+              <p>₹7,85,000 - ₹8,59,000</p>
+              <a href="{% url '5310'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5045 D/john-deere-5045-d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5045D</h6>
+              <p>₹7,67,000 - ₹8,12,000</p>
+              <a href="{% url '5045D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/5036D/john-deere-5036-d.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 5036D</h6>
+              <p>₹5,28,000 - ₹5,80,000</p>
+              <a href="{% url '5036D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/JD/3036EN/john-deere-3036-en.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere 3036EN</h6>
+              <p>₹6,45,000 - ₹6,90,000</p>
+              <a href="{% url '3036EN'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+       
+       </div>
+     </div>
+    
+
+    <!-- Force -->
+     <div class="Force" id="force_id">
+    <h4 class="trachead" style="padding-top: 50px;">Force Tractors</h4>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Orchard Dlx/force-orchard-deluxe.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Orchard DLX</h6>
+              <p>NA</p>
+              <a href="{% url 'ORC_DLX'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Sanman 6000/force-sanman-6000.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Sanman 6000</h6>
+              <p>₹7,40,000 - ₹7,60,000</p>
+             <a href="{% url 'SANMAN_6000'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Sanman 5000/force-sanman-5000.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Sanman 5000</h6>
+              <p>₹6,90,000 - ₹7,10,000</p>
+            <a href="{% url 'SANMAN_5000'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Abhiman/force-abhiman-.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Abhiman</h6>
+              <p>NA</p>
+            <a href="{% url 'ABHIMAN'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Orchard Mini/orchard-mini.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Orchard Mini</h6>
+              <p>NA</p>
+             <a href="{% url 'ORC_MINI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Orchard Dlx Lt/force-orchard-deluxe Lt.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Orchard DLX LT</h6>
+              <p>NA</p>
+             <a href="{% url 'ORC_DLX_LT'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Balwan 550/balwan-550.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Balwan 550</h6>
+              <p>₹6,80,000 - ₹7,00,000</p>
+              <a href="{% url 'BALWAN_550'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Balwan 400/force-balwan-400.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Balwan 400</h6>
+              <p>NA</p>
+              <a href="{% url 'BALWAN_400'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Force/Mini Abhiman/force-abhiman-mini.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Force Abhiman(Mini)</h6>
+              <p>NA</p>
+              <a href="{% url 'ABHIMAN_MINI'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}

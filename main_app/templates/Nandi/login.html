@@ -1,0 +1,37 @@
+{% extends 'Nandi/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+        <div class="container" style="padding-top: 110px;padding-bottom: 50px;">
+            <div class="row ">      	
+            	<div class="col-6 lgt">
+            		<div class="container">
+            			<h3 class="lg-head1">Sales Executive Login</h3>
+                        <p>Nandi Tractors provides a user-friendly platform for it's sales executives to keep a track of the sales and to keep them engaged to the company.</p>
+                        <p><b>Note: </b>This login is only for the sales executives and not for the users.</p>
+            		</div>
+            	</div>
+            	<div class="col-6 ">
+	      	<div class="container lgf" >
+	    	<h3 class="lg-head2" > Login </h3>
+	    <form method="POST">
+	    	{% csrf_token %}
+	      <div class="form-group">
+	        <label class="uname">Username</label>
+	        <input type="text" class="form-control my_input col-9" style="margin-left: 20px;" name="username">
+	      </div>
+	     <br>
+	      <div class="form-group">
+	        <label class="uname">Password</label>
+	        <input type="password" class="form-control my_input col-9" style="margin-left: 20px;" name="password">
+	      </div>
+	     <br>
+	      <button type="submit" class="btn btn-warning" style="background-color: #ff9e00;color: black;margin-bottom: 30px;font-family:'Spartan',sans-serif;margin-left: 20px">Login</button>
+	    </form>
+	  </div>
+	</div>
+	
+</div>
+</div>
+
+{% endblock %}

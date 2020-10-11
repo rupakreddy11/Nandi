@@ -1,0 +1,195 @@
+.contact{
+	padding-top: 0px;
+}
+
+.contact img{
+	height: 620px;
+}
+.contact-text h2{
+	font-family: 'Spartan',sans-serif;
+	font-size: 60px;
+	position: absolute;
+	text-align: right;
+	top: 52%;
+	right: 5%;
+	text-shadow: 1px 1px 2px black, 0 0 0.3em #ffffff, 0 0 0.1em #000000;
+	
+}
+
+.getintouch{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.getintouch .container .row .col-6 .cont-card{
+	border-radius: 15px;
+	
+}
+
+.getintouch .container .row .col-6 .card .card-header{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.card .card-header{
+	height: 140px;
+	background: linear-gradient(#e66465, #9198e5);
+	border-bottom-color: #ffffff;
+}
+
+
+.rounded-circle{
+	
+	border:8px solid #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    background-color: white;
+    background-attachment: 
+}
+
+.card-body p{
+	font-family: 'Kumbh Sans',sans-serif;
+}
+
+.getintouch .container .row{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+.social{
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.social a{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+@media (max-width: 992px){
+  
+
+  .contact-text h2{
+	font-family: 'Spartan',sans-serif;
+	font-size: 50px;
+	position: absolute;
+	text-align: right;
+	top: 45%;
+	right: 0%;
+	text-shadow: 1px 1px 2px black, 0 0 0.3em #ffffff, 0 0 0.1em #000000;
+}
+
+  .rounded-circle{
+	
+	border:8px solid #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    background-color: white;
+    background-attachment: 
+}
+
+.social a{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.social{
+	display: inline-block;
+	padding-top: 0px;
+}
+
+}
+
+
+@media (max-width: 768px){
+
+   .contact .abt-img{
+	width:100%;
+	height: auto;
+	padding-top: 30px;
+}
+
+  .contact-text h2{
+	font-family: 'Spartan',sans-serif;
+	font-size: 35px;
+	position: fixed;
+	text-align: right;
+	top: 30%;
+	right: 0%;
+	text-shadow: 1px 1px 2px black, 0 0 0.3em #ffffff, 0 0 0.1em #000000;
+}
+
+.rounded-circle{
+	
+	border:8px solid #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    background-color: white;
+    background-attachment: 
+}
+
+}
+
+
+
+@media (max-width: 544px){
+
+	.contact-text h2{
+	font-family: 'Spartan',sans-serif;
+	font-size: 25px;
+	position: absolute;
+	text-align: right;
+	top: 25%;
+	right: 0%;
+	text-shadow: 1px 1px 2px black, 0 0 0.3em #ffffff, 0 0 0.1em #000000;
+}
+
+.getintouch .container .row .col-6{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.contact .abt-img{
+	width:100%;
+	height: auto;
+	padding-top: 30px;
+}
+
+}
+
+@media (max-width: 379px){
+
+  .contact .abt-img{
+	width:100%;
+	height: auto;
+	padding-top: 50px;
+}
+
+  .contact-text h2{
+	font-family: 'Spartan',sans-serif;
+	font-size: 20px;
+	position: absolute;
+	text-align: right;
+	top: 27%;
+	right: 0%;
+	text-shadow: 1px 1px 2px black, 0 0 0.3em #ffffff, 0 0 0.1em #000000;
+}
+
+.rounded-circle{
+	
+	border:8px solid #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 34%;
+    background-color: white;
+    background-attachment: 
+}
+
+}
+
+
+}

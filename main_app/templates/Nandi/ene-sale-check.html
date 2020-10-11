@@ -1,0 +1,52 @@
+{% extends 'Nandi/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+    <div class="custenrol" >
+  	<div class="container">
+  		<h3 class="trachead" style="padding-bottom: 10px;">Nandi Tractors</h3>
+  		<h4 class="trachead" style="padding-top: 5px;">Enrolled Customers Check</h4>
+  		
+  		<form method="POST" >
+  			{% csrf_token %}
+  		<div class="form-group">
+  			<label>Enrollment ID:</label>
+  			<input type="text" class="form-control col-9" name="enrolled_id">
+  		</div>
+  		{% if messages %}
+        {% for message in messages %}
+        <p style="color: #ff5757">{{message}}</p>
+        {% endfor %}
+       {% endif %}
+  		<div class="form-group">
+  			<input type="submit" value="Submit" class="btn btn-warning" style="font-family: 'Spartan',sans-serif;margin-top: 20px;border-radius: 25px;padding-left: 15px;padding-right: 15px;padding-top: 10px;padding-bottom: 10px;"> 
+  		</div>
+  	</form>
+
+     {% if match %}
+     <h3 class="trachead">Customer Details</h3>
+     <div class="emp-details">
+     <p><b>Name:</b></p>
+     <p>{{p.full_name}}</p>
+     <br>
+     <p><b>Father Name:</b></p>
+     <p>{{p.father_name}}</p>
+     <br>
+     <p><b>Mobile No:</b></p>
+     <p>{{p.mobile_no}}</p>
+     <br>
+     <p><b>Aadhar No:</b></p>
+     <p>{{p.aadhar_no}}</p>
+     <br>
+     <p><b>Enrollment ID:</b></p>
+     <p>{{p.enrol_id}}</p>
+     <br>
+     <div class="form-group">
+        <a href="{% url 'ene-sale' %}"><button class="btn btn-warning" >Continue</button>
+      </div>
+     </div>
+     {% endif %}
+</div>
+</div>
+
+{% endblock %}

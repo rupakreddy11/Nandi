@@ -1,0 +1,55 @@
+{% extends 'Nandi/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+    <div class="abt" >
+    	<img src="{% static 'Images/abt-img3r.png' %}" class="abt-img">
+    	<div class="abt-text">
+    		<h2>About Us.</h2>
+        </div>
+    </div>
+    <div class="container we">
+        <h4 class="card-head">What we are?</h4>
+    	<div class="row">
+    		<div class="col-lg-4">
+    			<div class="card" >
+    				<img class="card-img-top" src="{% static 'Images/inno.jpg' %}">
+    			  <div class="card-body">
+    			  <h5 class="card-title">Innovative</h5>
+    			  <p class="card-text" >Nandi Tractors always encourages and comes up with creative and visionary thoughts. We believe that being unique and innovative keeps us leading in the market.</p>
+    			  </div>
+    			</div>	
+    		</div>
+    		<div class="col-lg-4">
+    			<div class="card" >
+    				<img class="card-img-top" src="{% static 'Images/grow.jpg' %}">
+    			  <div class="card-body">
+    			  <h5 class="card-title">Rise</h5>
+    			  <p class="card-text">We put our tremendous efforts to grow step by step. We overcome the hurdles with courage and explore like there is no end. Yes, We rise to every challenge.</p>
+    			  </div>
+    			</div>	
+    		</div>
+    		<div class="col-lg-4">
+    			<div class="card" >
+    				<img class="card-img-top" src="{% static 'Images/team.jpg' %}">
+    			  <div class="card-body">
+    			  <h5 class="card-title">Synergy</h5>
+    			  <p class="card-text">We work together,we stand together. We have conscientious employees working as team. We strongly believe that great things in business are achieved as team but not alone.</p>
+    			  </div>
+    			</div>	
+    		</div>
+        </div>
+    </div>
+   
+   <div class="ceo">
+      <img src="{% static 'Images/abt.png' %}" class="ceo-img">
+      <div class="ceo-txt">
+        <div class="container">
+            <h5>Why Nandi</h5>
+            <p><span>&#8220;</span>Indian Farmers are the backbone of nation. Despite their huge contribution to nation's economy, Farmer's community stayed neglected for decades.Now, they need support and recognition.On this note, we stand by them and provide enormous support by supplying tractors and farming implements at affordable prices with best offers.<span>&#8221;</span></p>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}

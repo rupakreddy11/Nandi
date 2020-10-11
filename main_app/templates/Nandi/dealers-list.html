@@ -1,0 +1,80 @@
+{% extends 'Nandi/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+<div class="alldealers">
+	<img  class="d-block w-100" src="{% static 'Images/allbrands.png' %}" >
+</div>
+
+<div class="branddealers">
+<div class="container">
+     <h4>Brand Dealers</h4>
+     <div class="row" style="padding-top: 10px;padding-bottom: 10px;">
+  
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Massey Ferguson Dealers</h5>
+        <p class="card-text"></p>
+        <a href="{% url 'masseydealer' %}"><button class="btn btn-outline-warning" >View Dealers</button></a>
+      </div>
+    </div>
+  </div>
+
+<div class="col-sm-6">
+    <div class="card" style="background-color: linear-gradient(to right, white , #ff9e00);" >
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Mahindra Dealers</h5>
+        <p class="card-text"></p>
+        <a href="{% url 'mahidealers' %}"><button class="btn btn-outline-warning">View Dealers</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row" style="padding-top: 10px;padding-bottom: 10px;">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Swaraj Dealers</h5>
+        <p class="card-text"></p>
+         <a href="{% url 'sjdealers' %}"><button class="btn btn-outline-warning" >View Dealers</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Sonalika Dealers</h5>
+        <p class="card-text"></p>
+        <a href="{% url 'sonalikadealers' %}"><button class="btn btn-outline-warning" >View Dealers</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="row" style="padding-top: 10px;padding-bottom: 10px;">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">John Deere Dealers</h5>
+        <p class="card-text"></p>
+         <a href="{% url 'JDdealers' %}"><button class="btn btn-outline-warning" >View Dealers</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">Force Dealers</h5>
+        <p class="card-text"></p>
+         <a href="{% url 'forcedealers' %}"><button class="btn btn-outline-warning" >View Dealers</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+                         
+                             
+</div>
+</div>	
+
+{% endblock %}

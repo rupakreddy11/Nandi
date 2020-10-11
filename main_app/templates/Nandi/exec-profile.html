@@ -1,0 +1,107 @@
+{% extends 'Nandi/base.html' %}
+{% load static %}
+{% block pagecontent %}
+{% if request.user.is_authenticated %}
+<div class="emp-dashboard">
+    <div class="container mydash">
+        <h4 class="dash-head">Sales Executive Dashboard</h4>
+        <div class="emp-profile">
+          <div class="dp">
+        	<img src="{{emp.empimage.url}}"  style="width: 250px ;height: 250px;">
+            </div>
+            <div class="emp-details">
+        		<p><b>Employee Name:</b></p>
+        		<p>{{user.first_name}} {{user.last_name}}</p>
+        		<br>
+        		<p><b>Employee Id:</b></p>
+        		<p>{{emp.Empid}}</p>
+        		<br>
+        		<p><b>E-mail:</b></p>
+        		<p>{{user.email}}</p>
+        		<br>
+                <p><b>Workstation:</b></p>
+                <p>{{emp.workstation}}</p>
+        	</div>
+        </div>
+        <div class="sales-table">
+        	<div class="container">
+                 <table>
+                 	<tr class="table-heads">
+                 		<th class="table-data">Sales Target</th>
+                        <th class="table-data">Completed Sales</th>
+                        <th class="table-data">Eligible for Incentive</th>                		
+                 	</tr>
+                 	<tr>
+                 		<td>{{emp.target}}</td>
+                 		<td>{{emp.completed_sales}}</td>
+                 		<td>{{ emp.isqualified }}</td>
+                  	</tr> 
+                </table>
+            </div>
+        	</div>
+        </div>
+    </div>
+<div class="ops">
+    <div class="container">
+        <h4 class="ophead">Sales Executive Operations</h4>
+      <div class="row">
+        <div class="col-sm-6" >
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Customer Enrollment Form</h5>
+                <p class="card-text">If the customer is ready to get enrolled for the company benefits,then use this form and enrol the customer details.</p>
+                <a href="{% url 'customenrol' %}"><button class="btn btn-warning" >Click here</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Sale Entry Form</h5>
+                <p class="card-text">If the customer buys a product from Nandi then the details should be entered here to access payment gateway.</p>
+                <a href="{% url 'sale' %}"><button class="btn btn-warning">Click here</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Payment Gateway</h5>
+                <p class="card-text">After enrollment or making a sale, payments should be done using this gateway only.</p>
+                <button class="btn btn-warning">Click here</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Used Tractor Verification</h5>
+                <p class="card-text">If customer wants to exchange or sell their used tractor then fill the details and submit for validation from sales manager.</p>
+                <a href="{% url 'used-trac-verify' %}"><button class="btn btn-warning">Click here</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Used Tractor Verification status</h5>
+                <p class="card-text">After verification process is done, to check whether the used tractor is approved or not.Check the status here.</p>
+                <a href="{% url 'used-trac-status-check' %}"><button class="btn btn-warning">Click here</button>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+             <div class="card" style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="card-body">
+                <h5 class="card-title" style="color: black;">Enrollment Status</h5>
+                <p class="card-text">Check here if a customer is a enrolled customer or not </p>
+                <a href="{% url 'cust-ene-check' %}"><button class="btn btn-warning">Click here</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+{% endif %}
+{% endblock %}

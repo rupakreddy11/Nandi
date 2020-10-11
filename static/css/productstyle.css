@@ -1,0 +1,294 @@
+.sld1{
+   padding-top: 100px;
+}
+
+.sld3{
+   padding-top: 50px;
+}
+
+.carousel-inner .carousel-item img{
+   opacity: 1;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   width: 100%;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   height: auto;
+
+}
+
+
+.carousel .carousel-indicators li {
+  background-color: white;
+  opacity: 1;
+  border-radius: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width:13px;
+  height: 3px;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #ff9e00;
+}
+ 
+.tractor-brands{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.row .col-2 .brand .brand-pics{
+   width: 80%;
+   height: 10vw;
+}
+
+.row .col-2{
+  border-color: #aaaaaa; 
+  
+}
+
+.tract{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.trachead{
+  text-align: center;
+   font-family: 'Spartan',sans-serif;
+   padding-bottom: 20px;
+   padding-top: 20px;
+    color: #ff9e00;
+   text-shadow: 1px 1px 2px black, 0 0 0.3em #ffffff, 0 0 0.2em #ffffff;
+}
+
+.MF{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.col-md-4 .card {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.col-md-4 .card .cardpic{
+   width: 100%;
+   height: 15vw;
+   object-fit: cover;
+
+}
+
+.col-md-4 .card .card-body{
+     text-align: center;
+     border-top: 1px solid #ff5757;
+}
+
+.txt-heads{
+   font-family: 'Spartan',sans-serif;
+   color: black;
+   font-size: 16px;
+}
+
+.card .card-body .btn-outline-warning{
+   border-color:#ff9e00;
+   font-family: 'Kumbh Sans',sans-serif;
+   background-color: white;
+   color: #ff9e00;
+   border-radius: 18px;
+}
+
+.card .card-body .btn-outline-warning:hover{
+   background-color: #ff9e00;
+   color: white;
+}
+
+@media (max-width: 991px){
+    .sld2{
+    padding-top: 35px;
+  }
+
+}
+
+@media (max-width: 768px){
+  
+  
+
+  .sld1{
+     padding-top: 85px;
+  }
+
+  .sld2{
+    padding-top: 55px;
+  }
+
+  .sld3{
+    padding-top: 75px;
+  }
+
+ .row .col-md-4{
+  width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+ }
+
+ .col-md-4 .card .cardpic{
+   width: 100%;
+   height: 25vw;
+   object-fit: cover;
+
+}
+
+ .row .col-md-4 .card .card-body{
+    padding-top: 10px;
+    padding-bottom: 8px;
+ }
+
+ .row .col-md-4 .card .card-body .txt-heads{
+  font-size: 15px;
+ }
+
+.row .col-md-4 .card .card-body p{
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+
+
+}
+
+
+@media (max-width: 544px){
+
+.sld1{
+   padding-top: 80px;
+}
+
+.sld2{
+   padding-top: 80px;
+}
+
+.sld3{
+   padding-top: 80px;
+}
+
+.row .col-sm-4{
+  
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+
+.row .col-sm-4 .card {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.row .col-sm-4 .card .cardpic{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+
+}
+
+.row .col-sm-4 .card .card-body{
+     text-align: center;
+     border-top: 1px solid #ff5757;
+}
+
+.row .col-sm-4 .card .card-body .txt-heads{
+   font-family: 'Spartan',sans-serif;
+   color: black;
+   font-size: 20px;
+}
+
+.row .col-sm-4 .card .card-body p{
+  font-size: 16px;
+}
+
+.card .card-body .btn-outline-warning{
+   border-color:#ff9e00;
+   font-family: 'Kumbh Sans',sans-serif;
+   background-color: white;
+   color: #ff9e00;
+   border-radius: 18px;
+}
+
+.card .card-body .btn-outline-warning:hover{
+   background-color: #ff9e00;
+   color: white;
+}
+
+}
+
+@media (max-width: 378px){
+
+  .sld1{
+   padding-top: 100px;
+}
+
+.sld2{
+   padding-top: 80px;
+}
+
+.sld3{
+   padding-top: 90px;
+}
+
+.row .col-sm-4{
+  
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+
+.row .col-sm-4 .card {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.row .col-sm-4 .card .cardpic{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+
+}
+
+.row .col-sm-4 .card .card-body{
+     text-align: center;
+     border-top: 1px solid #ff5757;
+}
+
+.row .col-sm-4 .card .card-body .txt-heads{
+   font-family: 'Spartan',sans-serif;
+   color: black;
+   font-size: 20px;
+}
+
+.row .col-sm-4 .card .card-body p{
+  font-size: 16px;
+}
+
+.card .card-body .btn-outline-warning{
+   border-color:#ff9e00;
+   font-family: 'Kumbh Sans',sans-serif;
+   background-color: white;
+   color: #ff9e00;
+   border-radius: 18px;
+}
+
+.card .card-body .btn-outline-warning:hover{
+   background-color: #ff9e00;
+   color: white;
+}
+
+
+}
