@@ -10,6 +10,7 @@ urlpatterns = [
     path('contact/', views.Contact , name='contact'),
     path('tractors/',views.Tractors,name='Tractor'),
     path('implements/', views.Implemns, name='Imps'),
+    path('used-tractors/', views.UsedTracs, name='UsedTs'),
     path('nandi-farming/',views.Nandi_Farming,name='Nandi_Farming'),
     path('dealers-list/',views.Dealer, name='dealer'),
     path('massey-dealers/',views.MasseyDealer, name='masseydealer'),
@@ -206,6 +207,114 @@ urlpatterns = [
     path('tractors/Sonalika/Sonalika-Worldtrac-60',views.SN_WT_60,name='WT_60'),
     path('tractors/Sonalika/Sonalika-Worldtrac-75',views.SN_WT_75,name='WT_75'),
     path('tractors/Sonalika/Sonalika-Worldtrac-90',views.SN_WT_90,name='WT_90'),
+
+    path('implements/fert-spreaders/mg-furbo-500',views.FS_MG_500,name='FURBO_500'),
+    path('implements/fert-spreaders/mahindra-fert-spreader',views.FS_MH,name='Mahin'),
+    path('implements/fert-spreaders/landforce-fert-spreader',views.FS_LF,name='landforce'),
+    path('implements/fert-spreaders/khedut-fert-spreader',views.FS_KD,name='khedut'),
+    path('implements/fert-spreaders/fieldking-fert-spreader',views.FS_FK,name='fieldking'),
+
+    path('implements/trailers/khedut-trailer',views.TLS_KD,name='khedut'),
+    path('implements/trailers/fieldking-trailer',views.TLS_FK,name='fieldking'),
+    path('implements/trailers/landforce-trailer',views.TLS_LF,name='landforce'),
+    path('implements/trailers/soil-master-trailer',views.TLS_SM,name='soilmaster'),
+
+    path('implements/balers/mg-round-165',views.BLR_MG_165,name='MG_165'),
+    path('implements/balers/mg-round-180',views.BLR_MG_180,name='MG_180'),
+    path('implements/balers/mg-square-baler',views.BLR_MG_SQB,name='MG_SQB'),
+    path('implements/balers/mg-trotter-125',views.BLR_MG_TT_125,name='MG_TT_125'),
+    path('implements/balers/claas-markant',views.BLR_CLS,name='CLS'),
+    path('implements/balers/dasmesh-631',views.BLR_DSM_631,name='DSM_631'),
+    path('implements/balers/fieldking-round-baler',views.BLR_FK_RB,name='FK_RB'),
+    path('implements/balers/fieldking-square',views.BLR_FK_SB,name='FK_SB'),
+    path('implements/balers/jd-compact-round',views.BLR_JD_CR,name='JD_CR'),
+    path('implements/balers/mahindra-baler',views.BLR_MH_B,name='MH_B'),
+    path('implements/balers/mahindra-square',views.BLR_MH_SQ,name='MH_SQ'),
+    path('implements/balers/new-holland-square',views.BLR_NH_SQ,name='NH_SQ'),
+    path('implements/balers/nh-small-round-baler',views.BLR_NH_SRB,name='NH_SRB'),
+    path('implements/balers/shaktiman-square-baler',views.BLR_SK_SQB,name='SK_SQB'),
+    path('implements/balers/shaktiman-srb-60',views.BLR_SK_SRB_60,name='SK_SRB_60'),
+
+    
+ 
+    path('implements/seeders/dasmesh-610-happy-seeder',views.SDR_DSM_610,name='DSM_610'),
+    path('implements/seeders/fk-happy-seeder',views.SDR_FK_HS   ,name='FK_HS'),
+    path('implements/seeders/fk-roto-seed-drill',views.SDR_FK_SD   ,name='FK_SD'),
+    path('implements/seeders/khedut-drum-seeder',views.SDR_KD_DS   ,name='KD_DS'),
+    path('implements/seeders/khedut-scf-drill',views.SDR_KD_SCF   ,name='KD_SCF'),
+    path('implements/seeders/lf-happy-seeder',views.SDR_LF_HS   ,name='LF_HS'),
+    path('implements/seeders/lf-roto-seed-drill-hduty',views.SDR_LF_RSD_HD   ,name='LF_RSD_HD'),
+    path('implements/seeders/lf-roto-seed-drill-std',views.SDR_LF_RSD_SD   ,name='LF_RSD_SD'),
+    path('implements/seeders/lf-turbo-seeder',views.SDR_LF_TS   ,name='LF_TS'),
+    path('implements/seeders/mg-superseeder-205',views.SDR_MG_SS_205  ,name='MG_SS_205'),
+    path('implements/seeders/mg-superseeder-230',views.SDR_MG_SS_230   ,name='MG_SS_230'),
+    path('implements/seeders/nh-happy-seeder',views.SDR_NH_HS   ,name='NH_HS'),
+    path('implements/seeders/sonalika-roto-seed-drill',views.SDR_SON_RSD   ,name='SON_RSD'),
+
+    path('implements/harrows/ag-power-615',views.HRR_AG_615  ,name='AG_615'), 
+    path('implements/harrows/fk-compact-md',views.HRR_FK_COM_MD  ,name='FK_COM_MD'),
+    path('implements/harrows/fk-dabangg',views.HRR_FK_DB   ,name='FK_DB'),
+    path('implements/harrows/fk-extra-hd-hyra',views.HRR_FK_EXTRA_HD   ,name='FK_EXTRA_HD'),
+    path('implements/harrows/fk-hd-hydra',views.HRR_FK_HD_HYDRA   ,name='FK_HD_HYDRA'),
+    path('implements/harrows/fk-hs-disc',views.HRR_FK_HS_DISC   ,name='FK_HS_DISC'),
+    path('implements/harrows/fk-mounted-offset-disc',views.HRR_FK_MN_OD  ,name='FK_MN_OD'),
+    path('implements/harrows/fk-mounted-offset-disc2',views.HRR_FK_MN_OD2  ,name='FK_MN_OD2'),
+    path('implements/harrows/fk-power',views.HRR_FK_POWER   ,name='FK_POWER'),
+    path('implements/harrows/fk-robust-poly-disc',views.HRR_FK_RPD  ,name='FK_RPD'),
+    path('implements/harrows/fk-tandem-disc-hd',views.HRR_FK_TD_HD  ,name='FK_TD_HD'),
+    path('implements/harrows/fk-tandem-disc-ls',views.HRR_FK_TD_LS   ,name='FK_TD_LS'),
+    path('implements/harrows/fk-tandem-disc-med-duty',views.HRR_FK_TD_MD   ,name='FK_TD_MD'),
+    path('implements/harrows/fk-tandem-disc-ms-usa',views.HRR_FK_TD_MS_USA   ,name='FK_TD_MS_USA'),
+    path('implements/harrows/fk-trailed-offset',views.HRR_FK_TO   ,name='FK_TO'),
+    path('implements/harrows/fk-ultra-hd-hydra',views.HRR_FK_UHH   ,name='FK_UHH'),
+    path('implements/harrows/fk-up-disc',views.HRR_FK_UD  ,name='FK_UD'),
+    path('implements/harrows/kd-hydra-hdd',views.HRR_KD_HH   ,name='KD_HH'),
+    path('implements/harrows/kd-mounted-osct-disc',views.HRR_KD_MOD  ,name='KD_MOD'),
+    path('implements/harrows/mahindra-disc',views.HRR_MD   ,name='MD'),
+    path('implements/harrows/sk-power-e120',views.HRR_SK_E120  ,name='SK_E120'),
+    path('implements/harrows/sk-power-m160',views.HRR_SK_M160   ,name='SK_M160'),
+    path('implements/harrows/sk-power',views.HRR_SK_P   ,name='SK_P'),
+    path('implements/harrows/sm-disc',views.HRR_SM_D   ,name='SM_D'),
+    
+
+
+    path('implements/ploughs/agristar-disc-2-furrow',views.PLG_AG_DISC ,name='AG_DISC'),
+    path('implements/ploughs/agristar-mould-board',views.PLG_AG_MB  ,name='AG_MB'),
+    path('implements/ploughs/captain-mb',views.PLG_C_MB   ,name='C_MB'),
+    path('implements/ploughs/captain-rev',views.PLG_C_REV   ,name='C_REV'),
+    path('implements/ploughs/dasmesh-451mb',views.PLG_DSM_451_MB   ,name='DSM_451_MB'),
+    path('implements/ploughs/fk-maxx-mb',views.PLG_FK_MAXX  ,name='FK_MAXX'),
+    path('implements/ploughs/fk-poly-disc',views.PLG_FK_POLY  ,name='FK_POLY'),
+    path('implements/ploughs/fk-rev-manual',views.PLG_FK_REV_MAN   ,name='FK_REV_MAN'),
+    path('implements/ploughs/jd-chisel',views.PLG_JD_CHISEL   ,name='JD_CHISEL'),
+    path('implements/ploughs/jd-hydra-rev',views.PLG_JD_HYDRA   ,name='JD_HYDRA'),
+    path('implements/ploughs/kd-rmp',views.PLG_KD_RMP   ,name='KD_RMP'),
+    path('implements/ploughs/khedut-mounted-disc',views.PLG_KD_MD   ,name='KD_MD'),
+    path('implements/ploughs/lemken-opal-1mb',views.PLG_LMK_1MB   ,name='LMK_1MB'),
+    path('implements/ploughs/lemken-opal-2mb',views.PLG_LMK_2MB   ,name='LMK_2MB'),
+    path('implements/ploughs/lf-mb-rev',views.PLG_LF_MB_REV  ,name='LF_MB_REV'),
+    path('implements/ploughs/mahindra-rev',views.PLG_MH_REV  ,name='MH_REV'),
+    path('implements/ploughs/mg-sumo-2mb',views.PLG_MG_SUMO_2MB  ,name='MG_SUMO_2MB'),
+    path('implements/ploughs/mg-sumo-3mb',views.PLG_MG_SUMO_3MB   ,name='MG_SUMO_3MB'),
+    path('implements/ploughs/nh-rev-hydra',views.PLG_NH_REV  ,name='NH_REV'),
+    path('implements/ploughs/sm-mb-3row',views.PLG_SM_MB  ,name='SM_MB'),
+    path('implements/ploughs/sonalika-mb',views.PLG_SON_MB   ,name='SON_MB'),
+    path('implements/ploughs/sonalika-rev',views.PLG_SON_REV ,name='SON_REV'),
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 

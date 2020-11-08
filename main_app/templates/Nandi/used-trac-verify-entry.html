@@ -4,6 +4,9 @@
 {% block pagecontent %}
   <div class="custenrol" >
   	<div class="container">
+       <button onclick="goBack()" class="btn btn-warning">&#8656</button>
+      <script type="text/javascript">function goBack() {
+  window.history.back();}</script>
   		<h3 class="trachead" style="padding-bottom: 10px;">Nandi Tractors</h3>
   		<h4 class="trachead" style="padding-top: 5px;">Used Tractor Verification Form</h4>
         {% if q.verification_id is not NULL %}
@@ -13,7 +16,7 @@
        </div>
      </div>
         {% else %}
-        <div class="col-9" style="margin-top:0px;margin-bottom: 30px;">
+        <div class="col-10" style="margin-top:0px;margin-bottom: 30px;">
   		<div class="form-group">
         <form method="POST" action="{% url 'used-trac-verify' %}" enctype="multipart/form-data">
         	{% csrf_token %}

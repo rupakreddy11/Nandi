@@ -241,7 +241,7 @@ p{
    padding-bottom: 30px;
 
 }
-
+ 
 .hero .dealer-name h3{
    position: absolute;
    text-align: left;
@@ -419,6 +419,8 @@ table, td, th{
    padding-bottom: 50px;
 }
 
+
+
 .col-3{
    background-color: #EBCC71;
    margin-top: 80px;
@@ -517,37 +519,26 @@ h4.exec{
 
 
 .abt{
-   padding-top: 30px;
+   padding-top: 20px;
    padding-bottom: 20px;
    
 }
 
 .abt-img{
    width: 100%;
-   height: 590px;
+   height: auto;
    background-size: cover;
    background-attachment: fixed;
-   margin-top: 50px;
-   margin-bottom: 20px;
+   margin-top: 0px;
+   margin-bottom: 0px;
    padding-top: 10px;
 }
 
-.abt-text{
-   position: absolute;
-   top: 50%;
-   left: 40%;
-   text-align: center;
-   color: white;
-   font-family: 'Spartan', sans-serif;
-}
 
-.abt-text h2{
-   font-size: 50px;
-}
 
 .we{
-   margin-top: 40px;
-   margin-bottom: 70px;
+   margin-top: 20px;
+   margin-bottom: 50px;
 }
 
 .we .card-head{
@@ -639,7 +630,45 @@ p.card-text{
 
 }
 
+.trigger{
+   padding-top: 30px;
+   padding-bottom: 30px;
+   margin-left: 40px;
+   margin-right: 20px;
+}
 
+.trigger p{
+   margin-bottom: 0.5rem;
+}
+
+.trig{
+   padding-top: 0px;
+   font-family: 'Spartan',sans-serif;
+   color: #d6171f;
+}
+
+.made{
+   position: relative;
+   margin-left: 77%;
+   margin-bottom: 0px;
+   padding-bottom: 0;
+ }
+
+ .made p{
+   font-size: 13px;
+   
+ }
+
+ .made p span{
+   color: red;
+
+ }
+
+
+.stamp{
+   width: 100px;
+   height: 70px;
+}
 
 footer{
    background-image: url("../Images/Nfooter.png");
@@ -703,10 +732,7 @@ p.foot-abt-us{
    margin-top: 80px;
 }
 
-ul{
-   list-style-type: none;
-   padding-left: 0px;
-}
+
 
 .foot-li{
    font-family: 'Spartan',sans-serif;
@@ -1278,6 +1304,27 @@ p.card-text{
 
 }
 
+.trigger{
+   padding-top: 30px;
+   padding-bottom: 30px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.trigger p{
+   margin-bottom: 0.5rem;
+   font-size: 14px;
+   text-align: justify-all;
+}
+
+.trig{
+   padding-top: 0px;
+   font-family: 'Spartan',sans-serif;
+   color: #d6171f;
+   font-size: 25px;
+   text-align: justify-all;
+}
+
 .farm{
    position: relative;
 }
@@ -1684,6 +1731,27 @@ h3.foot-text{
     font-size: 13px; 
 }
 
+.emp-dashboard .mydash{
+   box-shadow: none;
+   width: 100%;
+   height: auto;
+}
+
+.emp-profile{
+   display: initial;
+   text-align: justify-all;
+}
+
+.emp-profile .dp{
+   text-align: center;
+}
+
+.sales-table table{
+   border:1px solid #ff9e00;
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
 
 footer{
    background-image: url("../Images/Nfooter.png");
@@ -1753,9 +1821,15 @@ p.foot-abt-us{
    font-size: 12px;
 }
 
-.social .social-links{
+.social hr{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.myfoot .social .social-links{
    width: 15px;
    height: 15px;
+
 }
 
 
@@ -1900,11 +1974,37 @@ p.foot-abt-us{
    text-shadow: 1px 1px 2px black, 0 0 0.2em #fa8072, 0 0 0.1em #ff1616;
 }
 
+.emp-dashboard .mydash{
+   box-shadow: none;
+   width: 100%;
+   height: auto;
+}
+
+.emp-profile{
+   display: initial;
+   text-align: justify-all;
+}
+
+.emp-profile .dp{
+   text-align: center;
+}
+
+.sales-table table{
+   border:1px solid #ff9e00;
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+
+
 footer{
    background-image: none;
    background-color: #1e1e1e;
    width: 100%;
-   height: 340px;
+   height: 350px;
    position: relative;
    background-size: cover;
    background-position: center;
@@ -1918,6 +2018,7 @@ h3.foot-text{
    color: #ff9e00;
    text-align: center;
    font-size: 13px;
+   padding-right: 0px;
 }
 
 p.foot-text{
@@ -1941,6 +2042,8 @@ p.foot-text{
 .abt-text h2{
    font-size: 20px;
 }
+
+
 
 .foot-li{
    font-family: 'Spartan',sans-serif;
@@ -1995,7 +2098,7 @@ p.foot-abt-us{
    
 }
 
-.social .social-links{
+.myfoot .social .social-links{
    width: 18px;
    height: 18px;
 }

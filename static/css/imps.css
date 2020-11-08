@@ -1,19 +1,59 @@
 .imps_sld1{
-	padding-top:80px; 
+	padding-top:75px; 
 }
 
 .imps_sld2{
-	padding-top:50px; 
+	padding-top:37px; 
 }
 
 .imps_sld3{
-	padding-top:90px; 
+	padding-top:78px; 
 }
 
 .Implms{
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
+
+.Impstype{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.Impstype .container .row{
+	padding-top: 10px;
+}
+
+.col-md-2 .color-box{
+	background-color: black;
+	height: 50px;
+	width: 150px;
+}
+
+.col-md-3 a h4{
+	color: #ff9e00;
+	font-family: 'Spartan',sans-serif;
+	font-size: 21px;
+
+}
+
+.col-md-2 a h4{
+	color: #ff9e00;
+	font-family: 'Spartan',sans-serif;
+	font-size: 21px;
+}
+
+.col-md-3 a:hover{
+	text-decoration: none;
+	
+}
+
+.col-md-2 a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
 
 @media (max-width:992px){
 	.imps_sld1{

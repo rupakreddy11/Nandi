@@ -50,6 +50,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'Tractor' %}" style="font-family: 'Spartan',sans-serif;">Tractors</a>
           <a class="dropdown-item" href="{% url 'Imps' %}" style="font-family: 'Spartan',sans-serif;">Implements</a>
+          <a class="dropdown-item" href="{% url 'UsedTs' %}" style="font-family: 'Spartan',sans-serif;">Used Tractors</a>
         </div>
         <li class="nav-item">
         <a class="nav-link" href="{% url 'dealer' %}">Dealers</a>
@@ -79,6 +80,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'Tractor' %}" style="font-family: 'Spartan',sans-serif;">Tractors</a>
           <a class="dropdown-item" href="{% url 'Imps' %}" style="font-family: 'Spartan',sans-serif;">Implements</a>
+          <a class="dropdown-item" href="{% url 'UsedTs' %}" style="font-family: 'Spartan',sans-serif;">Used Tractors</a>
         </div>
         <li class="nav-item">
         <a class="nav-link" href="{% url 'dealer' %}">Dealers</a>
@@ -122,7 +124,7 @@
     
     <footer class="myfoot">
         <h3 class="foot-text">Nandi Tractors and Farming Implements</h3>
-        <p class="foot-text botleft">Nandi Tractors@2020 All Rights Reserved </p>
+        <p class="foot-text botleft">Nandi Tractors &#169 2020 All Rights Reserved </p>
         
           <h5 class="foot-abt-us">About Us</h5>
           <p class="foot-abt-us">Online Multi-brand Tractors and Farming Implements seller</p>
@@ -132,18 +134,24 @@
           <p class="foot-abt-us" style="font-size: 14px; padding-bottom: 10px;">Ph.no: 7995969007,7995949007</p> 
 
           <div class="social">
-            <a href=""><img src="{% static 'Images/facebook.png' %}" class="social-links"></a>
-            <a href=""><img src="{% static 'Images/instagram.png' %}" class="social-links"></a>
-            <a href=""><img src="{% static 'Images/linkedin.png' %}" class="social-links"></a>
-            <a href=""><img src="{% static 'Images/twitter.png' %}" class="social-links"></a>
+            <a href="https://www.facebook.com/Nandi-Tractors-103700834846465"><img src="{% static 'Images/facebook.png' %}" class="social-links"></a>
+
+            <a href="https://www.instagram.com/nanditractors/"><img src="{% static 'Images/instagram.png' %}" class="social-links"></a>
+
+            <a href="https://www.linkedin.com/in/nandi-tractors-2106301b7/"><img src="{% static 'Images/linkedin.png' %}" class="social-links"></a>
+
+            <a href="https://twitter.com/NandiTractors?s=20"><img src="{% static 'Images/twitter.png' %}" class="social-links"></a>
             <hr>
-            <p>We are social</p>
+            <p >We are social</p>
           </div>
     </footer>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="{% static 'js/scroll.js' %}" ></script>
+     <script src="{% static 'js/topbutton.js' %}" ></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   </body>
 </html>
+
+

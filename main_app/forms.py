@@ -5,8 +5,8 @@ from django.forms import ModelForm
 class CustomerForm(forms.ModelForm):
 	class Meta:
 		model=Customer
-		fields=['full_name','date_of_birth','father_name','mobile_no','alternate_mobile_no','aadhar_no','pan_no','present_address','permanent_address','purpose_of_enrol','tractor_exists','tractor_name_model','qualification','agriland_exists','land_acres','loans','new_tractor','t_c']
-		field_order= ['full_name','date_of_birth','father_name','mobile_no','alternate_mobile_no','aadhar_no','pan_no','present_address','permanent_address','purpose_of_enrol','tractor_exists','tractor_name_model','qualification','agriland_exists','land_acres','loans','new_tractor','t_c']
+		fields=['full_name','date_of_birth','father_name','mobile_no','alternate_mobile_no','aadhar_no','pan_no','present_address','permanent_address','purpose_of_enrol','tractor_exists','tractor_name_model','qualification','agriland_exists','land_acres','loans','new_tractor','employee_id','t_c']
+		field_order= ['full_name','date_of_birth','father_name','mobile_no','alternate_mobile_no','aadhar_no','pan_no','present_address','permanent_address','purpose_of_enrol','tractor_exists','tractor_name_model','qualification','agriland_exists','land_acres','loans','new_tractor','employee_id','t_c']
 
 		widgets={
 		    'full_name':forms.TextInput(attrs={'class':'form-control'}),
@@ -26,6 +26,7 @@ class CustomerForm(forms.ModelForm):
 		    'land_acres':forms.TextInput(attrs={'class':'form-control'}),
 		    'loans':forms.Textarea(attrs={'class':'form-control','rows':2, 'cols':10}),
 		    'new_tractor':forms.Select(attrs={'class':'form-control'}),
+		    'employee_id':forms.TextInput(attrs={'class':'form-control'}),
 		    't_c':forms.Select(attrs={'class':'form-control'}),
 		}
 
@@ -107,3 +108,5 @@ class UsedTractorVerificationForm(forms.ModelForm):
 			'employee_id':forms.TextInput(attrs={'class':'form-control'}),
 			't_c':forms.Select(attrs={'class':'form-control'}),
 		}
+
+

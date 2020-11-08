@@ -22,223 +22,901 @@
   </div>  
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8679</button>
+
+<div class="Impstype">
+  <h3 class="trachead">Implement Types</h3>
+  <div class="container">
+     <div class="row" style="padding-left: 50px;">
+      <div class="col-md-2">
+       
+        <a href="#ploughs"><h4>Ploughs</h4></a>
+
+      </div>
+      <div class="col-md-2">
+        <a href="#harrows">
+        <h4>Harrows</h4>
+      </a>
+      </div>
+      <div class="col-md-2">
+        <a href="#fert-spreaders"><h4>Fertilizer-Spreaders</h4></a>
+      </div>
+      <div class="col-md-2">
+        <a href="#seeders"><h4>Seeders</h4></a>
+      </div>
+      <div class="col-md-2">
+        <a href="#balers"><h4>Balers</h4></a>
+      </div>
+      <div class="col-md-2">
+        <a href="#w_t"><h4>Trailers</h4></a>
+      </div>
+     </div>
+   </div>
+  </div>
+
 <div class="Implms">
    	<h3 class="trachead">Implements</h3>
     <div class="container">
-      <h3 class="trachead">Plows</h3>
+      <h3 class="trachead" id="ploughs">Ploughs</h3>
       <div class="row">
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/sumo-3-mb-119-1590648347.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/sumo-3-mb-119-1590648347.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Maschio Gaspardo Sumo 3 MB</h6>
               <p>₹82,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+           <a href="{% url 'MG_SUMO_3MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
          <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/sumo-2mb-119-1590648362.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/sumo-2mb-119-1590648362.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Maschio Gaspardo SUMO 2MB</h6>
               <p>₹75,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+            <a href="{% url 'MG_SUMO_2MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/dasmesh_451_1.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/dasmesh_451_1.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Dasmesh 451 - MB Plough</h6>
               <p>₹62,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'DSM_451_MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/mould-board-plough.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/mould-board-plough.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Agristar Mould Board Plough</h6>
               <p>₹38,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'AG_MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/opal-090-2mb48238.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/opal-090-2mb48238.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Lemken OPAL 090 2MB</h6>
               <p>₹2,09,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'LMK_2MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/download.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/download.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads" style="font-size: 15px;">Fieldking Maxx Reversible MB Plough</h6>
               <p>₹85,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+            <a href="{% url 'FK_MAXX'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/reversible-mb-plough.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/reversible-mb-plough.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Khedut Reversible MB Plough</h6>
               <p>₹68,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'KD_RMP'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/reversible-manual-plough.png' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/reversible-manual-plough.png' %}" >
             <div class="card-body">
               <h6 class="txt-heads" style="font-size: 15px;">Fieldking Reversible Manual Plough</h6>
               <p>₹38,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'FK_REV_MAN'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/landforce-reversible-mb-plough-500x500.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/landforce-reversible-mb-plough-500x500.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Landforce MB Plough (Reversible)</h6>
               <p>₹50,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'LF_MB_REV'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/reversible-plough.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/reversible-plough.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Mahindra Reversible Plough</h6>
               <p>₹51,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'MH_REV'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/product-jpeg-500x500.jpeg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/product-jpeg-500x500.jpeg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Sonalika Reversible Plough</h6>
               <p>₹2,15,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'SON_REV'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/green-system-chisel-plough-john-deere-500x500.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/green-system-chisel-plough-john-deere-500x500.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">John Deere Chisel Plough</h6>
               <p>₹75,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+              <a href="{% url 'JD_CHISEL'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/sonalika_mb_lpough.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/sonalika_mb_lpough.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Sonalika MB PLOUGH</h6>
               <p>₹65,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+              <a href="{% url 'SON_MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/mb-plough-3-row-29661.png' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/mb-plough-3-row-29661.png' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Soil Master MB Plough (3 Row)</h6>
               <p>₹35,500</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'SM_MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/opal-090-1mb50630.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/opal-090-1mb50630.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Lemken OPAL 090 1MB</h6>
               <p>₹55,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+              <a href="{% url 'LMK_1MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/2-furrow99554.png' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/2-furrow99554.png' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Agristar Disc Plough 2 FURROW</h6>
               <p>₹42,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'AG_DISC'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/hydraulic-reversible-mb-plough-john-deere-500x500.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/hydraulic-reversible-mb-plough-john-deere-500x500.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads" style="font-size: 12px;">John Deere Hydraulic Reversible MB Plough</h6>
               <p>₹62,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+              <a href="{% url 'JD_HYDRA'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/poly-disc-plough53536.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/poly-disc-plough53536.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Fieldking Poly Disc Plough</h6>
               <p>₹92,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+              <a href="{% url 'FK_POLY'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/mbplough-main_a8b1cd1c-cf9f-4d37-a079-1608b26206e5.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/PerfectHydraulicreversibleploughSawan_0_1572863381.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">New Holland Reversible Hydraulic</h6>
+              <p>₹92,000</p>
+             <a href="{% url 'NH_REV'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/mbplough-main_a8b1cd1c-cf9f-4d37-a079-1608b26206e5.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Captain M B Plough</h6>
               <p>₹28,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'C_MB'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/mini-reversible-plough-500x500.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/mini-reversible-plough-500x500.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Captain Reversible</h6>
               <p>₹62,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'C_REV'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
         <div class="col-4 col-md-4 col-sm-4">
           <div class="card">
-            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/mounted-off-set-cum-trailed-disc-harrow-34-1590134871.jpg' %}" >
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Plows/mounted-off-set-cum-trailed-disc-harrow-34-1590134871.jpg' %}" >
             <div class="card-body">
               <h6 class="txt-heads">Khedut Mounted Disc Plough</h6>
               <p>₹28,000</p>
-              <button class="btn btn-outline-warning">More details</button>
+             <a href="{% url 'KD_MD'%}"><button class="btn btn-outline-warning">More details</button></a>
             </div>
           </div>
         </div>
 
 </div>
+
+      <h3 class="trachead" id="harrows">Harrows</h3>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/dabangg-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Dabangg Harrow</h6>
+              <p>₹40,000</p>
+             <a href="{% url 'FK_DB'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/trailed-offset-disc-harrow-(with-tyre).png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Trailed Offset Disc</h6>
+              <p>₹65,000</p>
+           <a href="{% url 'FK_TO'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/offset-disc-harrow.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Mahindra Disc Harrow</h6>
+              <p>₹65,000</p>
+           <a href="{% url 'MD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/up-model-disc-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking UP Model Disc Harrow</h6>
+              <p>₹36,000-₹68,000</p>
+           <a href="{% url 'FK_UD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/soil-master-20-disc-harrow-500x500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Soil Master Disc Harrow</h6>
+              <p>₹45,000-₹72,000</p>
+             <a href="{% url 'SM_D'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/Power-Harrow-E-120.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Shaktiman Power Harrow Regular</h6>
+              <p>₹1,35,000-₹1,55,000</p>
+             <a href="{% url 'SK_P'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/khedut-kmodh12-mounted-off-set-disc-harrow-500x500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Khedut Hydraulic Heavy Duty Disc Harrow</h6>
+              <p>₹46,000-₹95,000</p>
+            <a href="{% url 'KD_HH'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/compact-model-disc-harrow-medium-series.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Compact Model Disc Harrow</h6>
+              <p>₹45,000-₹82,000</p>
+             <a href="{% url 'FK_COM_MD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/power-harrow-500x500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Agristar Power Harrow 615 PH</h6>
+              <p>₹1,15,000-₹1,35,000</p>
+           <a href="{% url 'AG_615'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/extra-heavy-duty-hydraulic-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Extra Heavy Duty Hydraulic Harrow</h6>
+              <p>₹1,25,000-₹3,35,000</p>
+           <a href="{% url 'FK_EXTRA_HD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/Power-Harrow-E-120.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Shaktiman Power Harrow E 120</h6>
+              <p>₹1,15,000-₹1,35,000</p>
+              <a href="{% url 'SK_E120'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/tandem-disc-harrow-medium-duty-USA.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Tandem Disc Harrow Medium Duty</h6>
+              <p>₹65,000-₹1,35,000</p>
+              <a href="{% url 'FK_TD_MD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/mounted-offset-disc-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Mounted Offset Disc Harrow</h6>
+              <p>₹85,000-₹1,55,000</p>
+              <a href="{% url 'FK_MN_OD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/download.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Robust Poly Disc</h6>
+              <p>₹40,000-₹80,000</p>
+              <a href="{% url 'FK_RPD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/tandem-disc-harrow-medium-duty-USA.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Tandem Disc Harrow Medium Series</h6>
+              <p>₹1,75,000-₹3,15,000</p>
+            <a href="{% url 'FK_TD_MS_USA'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/mounted-off-set-cum-trailed-disc-harrow-34-1590134871.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Khedut Mounted Off Set Cum Trailed Disc Harrow</h6>
+              <p>₹55,000-₹80,000</p>
+             <a href="{% url 'KD_MOD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/mounted-offset-disc-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Mounted Offset Disc Harrow</h6>
+              <p>₹45,000-₹82,000</p>
+             <a href="{% url 'FK_MN_OD2'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/heavy-duty-hydraulic-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Heavy Duty Hydraulic Harrow</h6>
+              <p>₹65,000-₹1,55,000</p>
+              <a href="{% url 'FK_HD_HYDRA'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/tandem-disc-harrow-heavy-duty.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Tandem Heavy Duty</h6>
+              <p>₹85,000-₹1,75,000</p>
+             <a href="{% url 'FK_TD_HD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/tandem-disc-harrow-heavy-duty.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Tandem Disc Light Series</h6>
+              <p>₹72,000-₹1,65,000</p>
+               <a href="{% url 'FK_TD_LS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/power-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Power Harrow</h6>
+              <p>₹82,000-₹1,75,000</p>
+ <a href="{% url 'FK_POWER'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/ultra-series-heavy-duty-hydraulic-harrow.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Ultra Series Heavy Duty Hydraulic Harrow</h6>
+              <p>₹1,45,000-₹2,55,000</p>
+              <a href="{% url 'FK_UHH'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/download (2).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Shaktiman Power Harrow M -160</h6>
+              <p>₹92,000-₹1,85,000</p>
+             <a href="{% url 'SK_M160'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Harrows/high-speed-disc-harrow-pro.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking High Speed Disc Harrow</h6>
+              <p>₹35,000-₹1,15,000</p>
+              <a href="{% url 'FK_HS_DISC'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+ <h3 class="trachead" id="fert-spreaders">Fertilizer Spreaders</h3>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Fert-spreaders/download.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Maschio Gaspardo Furbo 500</h6>
+              <p>₹30,000-₹1,15,000</p>
+              <a href="{% url 'FURBO_500'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Fert-spreaders/fertilizer-broadcaster-1.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Mahindra Fertilizer Spreader</h6>
+              <p>₹45,000-₹95,000</p>
+              <a href="{% url 'Mahin'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Fert-spreaders/dsdssadsa-500x500.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Khedut Fertilizer Spreader</h6>
+              <p>₹45,000-₹95,000</p>
+              <a href="{% url 'khedut'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Fert-spreaders/fertilizer-52559.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Landforce Fertilizer Spreader</h6>
+              <p>₹32,000-₹85,000</p>
+             <a href="{% url 'landforce'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Fert-spreaders/fertilizer-spreader.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">FieldKing Fertilizer Spreader</h6>
+              <p>₹45,000-₹95,000</p>
+             <a href="{% url 'fieldking'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+
+</div>        
+
+<h3 class="trachead" id="w_t">Wagons or Trailers</h3>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Trailers/khedut-tractor-tipping-trailer-500x500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Khedut Tractor Tipping Trailer</h6>
+              <p>₹1,05,000-₹1,95,000</p>
+              <a href="{% url 'khedut'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Trailers/tipping-trailer.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Tipping</h6>
+              <p>₹1,05,000-₹1,95,000</p>
+             <a href="{% url 'fieldking'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Trailers/tipping-trailer-tandem-axle-69314.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Landforce Trailer (Tandem Axle)</h6>
+              <p>₹1,05,000-₹1,95,000</p>
+              <a href="{% url 'landforce'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Trailers/download.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Soil Master Trolley</h6>
+              <p>₹1,05,000-₹1,95,000</p>
+            <a href="{% url 'soilmaster'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+<h3 class="trachead" id="seeders">Seeders</h3>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/superseeder-205-117-1590643720.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MG SUPERSEEDER 205</h6>
+              <p>₹1,65,000-₹2,45,000</p>
+             <a href="{% url 'MG_SS_205'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/superseeder-230-117-1590643708.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MG SUPERSEEDER 230</h6>
+              <p>₹1,75,000-₹2,65,000</p>
+           <a href="{% url 'MG_SS_230'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/roto-seed-drill-74-1590145326.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Sonalika Roto Seed Drill</h6>
+              <p>₹1,15,000-₹1,75,000</p>
+             <a href="{% url 'SON_RSD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/seed-cum-fertilizer-drill-multi-crop-rotor-base.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Khedut Seed Cum Fertilizer Drill </h6>
+              <p>₹41,000-₹1,15,000</p>
+             <a href="{% url 'KD_SCF'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/roto-seed-drill.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Roto Seed Drill </h6>
+              <p>₹38,000-₹1,05,000</p>
+             <a href="{% url 'FK_SD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/roto-seeder-std-duty-35110.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Landforce Roto Seeder (Std. Duty)</h6>
+              <p>₹1,27,000-₹1,45,000</p>
+              <a href="{% url 'LF_RSD_SD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/drum-seeder.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Khedut Drum Seeder</h6>
+              <p>₹6,800-₹32,000</p>
+             <a href="{% url 'KD_DS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/landforce-happy-seeder-500x500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Landforce Happy Seeder</h6>
+              <p>₹1,35,000-₹1,65,000</p>
+            <a href="{% url 'LF_HS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/dasmesh_610_1.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Dasmesh 610-Happy Seeder</h6>
+              <p>₹1,55,000-₹1,95,000</p>
+             <a href="{% url 'DSM_610'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/turbo-seederroto-till-drill-74-1588919073.jpeg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Landforce Turbo Seeder</h6>
+              <p>₹1,55,000-₹1,95,000</p>
+            <a href="{% url 'LF_TS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/roto-seeder-heavy-duty-35338.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Landforce Roto Seeder(Heavy Duty) </h6>
+              <p>₹1,45,000-₹1,65,000</p>
+             <a href="{% url 'LF_RSD_HD'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/happy-seeder.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Happy Seeder </h6>
+              <p>₹1,45,000-₹1,95,000</p>
+            <a href="{% url 'FK_HS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Seeders/happy-seeder (1).png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">New Holland Happy Seeder</h6>
+              <p>₹1,45,000-₹2,15,000</p>
+            <a href="{% url 'NH_HS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+
+</div>    
+
+<h3 class="trachead" id="balers">Balers</h3>
+      <div class="row">
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/extreme-165-52-1590640389.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MG ROUND BALER - Extreme 165</h6>
+              <p>₹11,15,000-₹19,15,000</p>
+              <a href="{% url 'MG_165'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/Square-Baler_1257x800-865x500.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Shaktiman Square Baler</h6>
+              <p>₹11,15,000-₹14,15,000</p>
+              <a href="{% url 'SK_SQB'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/compact_round_baler_large_ff4ea5988d689dbd806d3df581de9aa3e45323d7.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">John Deere Compact Round Baler</h6>
+              <p>₹2,65,000-₹2,95,000</p>
+              <a href="{% url 'JD_CR'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/bc5000-overview.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">New Holland SQUARE BALER</h6>
+              <p>₹11,65,000-₹16,95,000</p>
+              <a href="{% url 'NH_SQ'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/SRB-60-Plus-865x500.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Shaktiman Round Baler SRB 60</h6>
+              <p>₹2,95,000-₹4,65,000</p>
+             <a href="{% url 'SK_SRB_60'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/dasmesh_631_1.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Dasmesh 631 - Round Straw Baler</h6>
+              <p>₹2,95,000-₹4,65,000</p>
+             <a href="{% url 'DSM_631'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/download.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MG ROUND BALER - EXTREME 180</h6>
+              <p>₹10,95,000-₹12,65,000</p>
+              <a href="{% url 'MG_180'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/square_baler.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Mahindra Square Baler</h6>
+              <p>₹10,05,000-₹12,65,000</p>
+             <a href="{% url 'MH_SQ'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/download (1).jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Round</h6>
+              <p>₹10,95,000-₹12,65,000</p>
+            <a href="{% url 'FK_RB'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/markant39434.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Claas MARKANT</h6>
+              <p>₹10,95,000-₹12,65,000</p>
+             <a href="{% url 'CLS'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/bal2-500x500.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MG SQUARE BALER - PITAGORA L</h6>
+              <p>₹11,45,000-₹14,65,000</p>
+            <a href="{% url 'MG_SQB'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/trotter-125-52-1590647042.jpg' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">MG ROUND BALER TROTTER 125</h6>
+              <p>₹11,45,000-₹14,65,000</p>
+             <a href="{% url 'MG_TT_125'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/roll-belt-round-balers-overview.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">New Holland Small Round Baler</h6>
+              <p>₹11,45,000-₹14,65,000</p>
+              <a href="{% url 'NH_SRB'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/square-baler.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Fieldking Square</h6>
+              <p>₹11,45,000-₹14,65,000</p>
+             <a href="{% url 'FK_SB'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+          <div class="card">
+            <img class="card-imp-top cardpic" src="{% static 'Images/Imps/Balers/mahindra-applitrac-tractor-baler-500x500.png' %}" >
+            <div class="card-body">
+              <h6 class="txt-heads">Mahindra Baler</h6>
+              <p>₹10,05,000-₹12,95,000</p>
+              <a href="{% url 'MH_B'%}"><button class="btn btn-outline-warning">More details</button></a>
+            </div>
+          </div>
+        </div>
+
+</div>        
 </div>
 </div>
 

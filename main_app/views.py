@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import EmployeeProfile, Customer, ENESaleEntry, NonENESaleEntry, UsedTractorVerification 
 from .forms import CustomerForm, ENESaleForm, NonENESaleForm, UsedTractorVerificationForm
+from django.core.mail import send_mail
 import uuid
 
 def home(request):
@@ -32,18 +33,14 @@ def User_logout(request):
 	return redirect('home')
 
 
-
-def About(request):
-	return render(request,'Nandi/about.html',{})
-
-def Contact(request):
-	return render(request,'Nandi/contact.html',{})
-
 def Tractors(request):
 	return render(request,'Nandi/tractors.html',{})
 
 def Implemns(request):
 	return render(request,'Nandi/implements.html',{})
+
+def UsedTracs(request):
+	return render(request,'Nandi/used-tractors.html',{})
 
 def Nandi_Farming(request):
 	return render(request,'Nandi/nandi-farming.html',{})
@@ -69,6 +66,24 @@ def SonalikaDealers(request):
 def ForceDealers(request):
 	return render(request,'Nandi/force-dealers.html',{})
 
+def About(request):
+	return render(request,'Nandi/about.html',{})
+
+def Contact(request):
+	if request.method=="POST":
+		contact_name = request.POST['contact_name']
+		contact_mail = request.POST['contact_mail']
+		message = request.POST['message']
+
+		send_mail(
+			'message from'+contact_name,
+			message,
+			contact_mail,
+			['contact.nanditractors@gmail.com'],
+			)
+
+	else:
+		return render(request,'Nandi/contact.html',{})
 
 
 
@@ -201,7 +216,7 @@ def CustEneCheck(request):
 		return render(request,'Nandi/cust-ene-status-check.html',{})
 
 
-
+#Tractors
 
 # Mahindra Tractors
 def MD_245DI_ORC(request):
@@ -722,6 +737,268 @@ def F_SANMAN_5000(request):
 
 def F_SANMAN_6000(request):
 	return render(request,'Nandi/tractors/Force/Sanman-6000.html',{})
+
+#Implements
+
+#Fert-Spreaders 
+def FS_MG_500(request):
+	return render(request,'Nandi/implements/fert-spreaders/mg-furbo-500.html',{})
+
+def FS_MH(request):
+	return render(request,'Nandi/implements/fert-spreaders/mahindra-fert-spreader.html',{})
+
+def FS_LF(request):
+	return render(request,'Nandi/implements/fert-spreaders/landforce-fert-spreader.html',{})
+
+def FS_KD(request):
+	return render(request,'Nandi/implements/fert-spreaders/khedut-fert-spreader.html',{})
+
+def FS_FK(request):
+	return render(request,'Nandi/implements/fert-spreaders/fieldking-fert-spreader.html',{})
+
+#Trailers
+def TLS_KD(request):
+    return render(request,'Nandi/implements/trailers/khedut-trailer.html',{})
+
+def TLS_FK(request):
+    return render(request,'Nandi/implements/trailers/fieldking-trailer.html',{})
+
+def TLS_LF(request):
+    return render(request,'Nandi/implements/trailers/landforce-trailer.html',{})
+
+def TLS_SM(request):
+    return render(request,'Nandi/implements/trailers/soil-master-trailer.html',{})	
+
+#Balers
+def BLR_MG_165(request):
+	return render(request,'Nandi/implements/balers/mg-round-165.html',{})	
+
+def BLR_MG_180(request):
+	return render(request,'Nandi/implements/balers/mg-round-180.html',{})	
+
+def BLR_MG_SQB(request):
+	return render(request,'Nandi/implements/balers/mg-square-baler.html',{})	
+
+def BLR_MG_TT_125(request):
+	return render(request,'Nandi/implements/balers/mg-trotter-125.html',{})	
+
+def BLR_CLS(request):
+	return render(request,'Nandi/implements/balers/claas-markant.html',{})	
+
+def BLR_DSM_631(request):
+	return render(request,'Nandi/implements/balers/dasmesh-631.html',{})
+
+def BLR_FK_RB(request):
+	return render(request,'Nandi/implements/balers/fieldking-round-baler.html',{})
+
+def BLR_FK_SB(request):
+	return render(request,'Nandi/implements/balers/fieldking-square.html',{})
+
+def BLR_JD_CR(request):
+	return render(request,'Nandi/implements/balers/jd-compact-round.html',{})
+
+def BLR_MH_B(request):
+	return render(request,'Nandi/implements/balers/mahindra-baler.html',{})	
+
+def BLR_MH_SQ(request):
+	return render(request,'Nandi/implements/balers/mahindra-square.html',{})	
+
+def BLR_NH_SQ(request):
+	return render(request,'Nandi/implements/balers/new-holland-square.html',{})	
+
+def BLR_NH_SRB(request):
+	return render(request,'Nandi/implements/balers/nh-small-round-baler.html',{})	
+
+def BLR_SK_SQB(request):
+	return render(request,'Nandi/implements/balers/shaktiman-square-baler.html',{})
+
+def BLR_SK_SRB_60(request):
+	return render(request,'Nandi/implements/balers/shaktiman-srb-60.html',{})
+
+
+#Seeders
+def SDR_DSM_610  (request):
+	return render(request,'Nandi/implements/seeders/dasmesh-610-happy-seeder.html',{})
+
+def SDR_FK_HS   (request):
+	return render(request,'Nandi/implements/seeders/fk-happy-seeder.html',{})
+
+def SDR_FK_SD  (request):
+	return render(request,'Nandi/implements/seeders/fk-roto-seed-drill.html',{})	
+
+def SDR_KD_DS  (request):
+	return render(request,'Nandi/implements/seeders/khedut-drum-seeder.html',{})
+
+def SDR_KD_SCF  (request):
+	return render(request,'Nandi/implements/seeders/khedut-scf-drill.html',{})
+
+def SDR_LF_HS  (request):
+	return render(request,'Nandi/implements/seeders/lf-happy-seeder.html',{})
+
+def SDR_LF_RSD_HD   (request):
+	return render(request,'Nandi/implements/seeders/lf-roto-seed-drill-hduty.html',{})
+
+def SDR_LF_RSD_SD  (request):
+	return render(request,'Nandi/implements/seeders/lf-roto-seed-drill-std.html',{})
+
+def SDR_LF_TS  (request):
+	return render(request,'Nandi/implements/seeders/lf-turbo-seeder.html',{})
+
+def SDR_MG_SS_205  (request):
+	return render(request,'Nandi/implements/seeders/mg-superseeder-205.html',{})
+
+def SDR_MG_SS_230  (request):
+	return render(request,'Nandi/implements/seeders/mg-superseeder-230.html',{})
+
+def SDR_NH_HS  (request):
+	return render(request,'Nandi/implements/seeders/nh-happy-seeder.html',{})
+
+def SDR_SON_RSD  (request):
+	return render(request,'Nandi/implements/seeders/sonalika-roto-seed-drill.html',{})
+
+
+#Harrows
+def HRR_AG_615 (request):
+	return render(request,'Nandi/implements/harrows/ag-power-615.html',{}) 
+
+def HRR_FK_COM_MD (request):
+	return render(request,'Nandi/implements/harrows/fk-compact-md.html',{})
+
+def HRR_FK_DB (request):
+	return render(request,'Nandi/implements/harrows/fk-dabangg.html',{})
+
+def HRR_FK_EXTRA_HD (request):
+	return render(request,'Nandi/implements/harrows/fk-extra-hd-hyra.html',{})
+
+def HRR_FK_HD_HYDRA (request):
+	return render(request,'Nandi/implements/harrows/fk-hd-hydra.html',{})
+
+def HRR_FK_HS_DISC (request):
+	return render(request,'Nandi/implements/harrows/fk-hs-disc.html',{})
+
+def HRR_FK_MN_OD (request):
+	return render(request,'Nandi/implements/harrows/fk-mounted-offset-disc.html',{})
+
+def HRR_FK_MN_OD2 (request):
+	return render(request,'Nandi/implements/harrows/fk-mounted-offset-disc2.html',{})
+
+def HRR_FK_POWER (request):
+	return render(request,'Nandi/implements/harrows/fk-power.html',{})
+
+def HRR_FK_RPD (request):
+	return render(request,'Nandi/implements/harrows/fk-robust-poly-disc.html',{})
+
+def HRR_FK_TD_HD (request):
+	return render(request,'Nandi/implements/harrows/fk-tandem-disc-hd.html',{})
+
+def HRR_FK_TD_LS (request):
+	return render(request,'Nandi/implements/harrows/fk-tandem-disc-ls.html',{})
+
+def HRR_FK_TD_MD (request):
+	return render(request,'Nandi/implements/harrows/fk-tandem-disc-med-duty.html',{})
+
+def HRR_FK_TD_MS_USA (request):
+	return render(request,'Nandi/implements/harrows/fk-tandem-disc-ms-usa.html',{})
+
+def HRR_FK_TO (request):
+	return render(request,'Nandi/implements/harrows/fk-trailed-offset.html',{})
+
+def HRR_FK_UHH (request):
+	return render(request,'Nandi/implements/harrows/fk-ultra-hd-hydra.html',{})
+
+def HRR_FK_UD (request):
+	return render(request,'Nandi/implements/harrows/fk-up-disc.html',{})
+
+def HRR_KD_HH (request):
+	return render(request,'Nandi/implements/harrows/kd-hydra-hdd.html',{})
+
+def HRR_KD_MOD (request):
+	return render(request,'Nandi/implements/harrows/kd-mounted-osct-disc.html',{})
+
+def HRR_MD (request):
+	return render(request,'Nandi/implements/harrows/mahindra-disc.html',{})
+
+def HRR_SK_E120 (request):
+	return render(request,'Nandi/implements/harrows/sk-power-e120.html',{})
+
+def HRR_SK_M160 (request):
+	return render(request,'Nandi/implements/harrows/sk-power-m160.html',{})
+
+def HRR_SK_P (request):
+	return render(request,'Nandi/implements/harrows/sk-power.html',{})
+
+def HRR_SM_D (request):
+	return render(request,'Nandi/implements/harrows/sm-disc.html',{})
+
+
+
+
+#Ploughs
+def PLG_AG_DISC (request):
+	return render(request,'Nandi/implements/ploughs/agristar-disc-2-furrow.html',{})
+
+def PLG_AG_MB (request):
+	return render(request,'Nandi/implements/ploughs/agristar-mould-board.html',{})
+
+def PLG_C_MB (request):
+	return render(request,'Nandi/implements/ploughs/captain-mb.html',{})
+
+def PLG_C_REV (request):
+	return render(request,'Nandi/implements/ploughs/captain-rev.html',{})
+
+def PLG_DSM_451_MB (request):
+	return render(request,'Nandi/implements/ploughs/dasmesh-451mb.html',{})
+
+def PLG_FK_MAXX (request):
+	return render(request,'Nandi/implements/ploughs/fk-maxx-mb.html',{})
+
+def PLG_FK_POLY (request):
+	return render(request,'Nandi/implements/ploughs/fk-poly-disc.html',{})
+
+def PLG_FK_REV_MAN (request):
+	return render(request,'Nandi/implements/ploughs/fk-rev-manual.html',{})
+
+def PLG_JD_CHISEL (request):
+	return render(request,'Nandi/implements/ploughs/jd-chisel.html',{})
+
+def PLG_JD_HYDRA (request):
+	return render(request,'Nandi/implements/ploughs/jd-hydra-rev.html',{})
+
+def PLG_KD_RMP (request):
+	return render(request,'Nandi/implements/ploughs/kd-rmp.html',{})
+
+def PLG_KD_MD (request):
+	return render(request,'Nandi/implements/ploughs/khedut-mounted-disc.html',{})
+
+def PLG_LMK_1MB (request):
+	return render(request,'Nandi/implements/ploughs/lemken-opal-1mb.html',{})
+
+def PLG_LMK_2MB (request):
+	return render(request,'Nandi/implements/ploughs/lemken-opal-2mb.html',{})
+
+def PLG_LF_MB_REV (request):
+	return render(request,'Nandi/implements/ploughs/lf-mb-rev.html',{})
+
+def PLG_MH_REV (request):
+	return render(request,'Nandi/implements/ploughs/mahindra-rev.html',{})
+
+def PLG_MG_SUMO_2MB (request):
+	return render(request,'Nandi/implements/ploughs/mg-sumo-2mb.html',{})
+
+def PLG_MG_SUMO_3MB (request):
+	return render(request,'Nandi/implements/ploughs/mg-sumo-3mb.html',{})
+
+def PLG_NH_REV (request):
+	return render(request,'Nandi/implements/ploughs/nh-rev-hydra.html',{})
+
+def PLG_SM_MB (request):
+	return render(request,'Nandi/implements/ploughs/sm-mb-3row.html',{})
+
+def PLG_SON_MB(request):
+	return render(request,'Nandi/implements/ploughs/sonalika-mb.html',{})
+
+def PLG_SON_REV (request):
+	return render(request,'Nandi/implements/ploughs/sonalika-rev.html',{})
 
 
 

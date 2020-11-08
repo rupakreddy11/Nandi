@@ -3,10 +3,7 @@
 
 {% block pagecontent %}
 <div class="contact" >
-    	<img src="{% static 'Images/Contact_us.png' %}" class="abt-img">
-    	<div class="contact-text">
-    		<h2>Contact Us</h2>
-    </div>  
+    	<img src="{% static 'Images/contact_us.png' %}" class="abt-img">  
 </div>
 <div class="getintouch">
 	<div class="container">
@@ -53,8 +50,8 @@
 				<div class="card-body text-center">
 					<h4 class="card-title" style="padding-top: 50px; font-size: 25px;">Visit Us</h4>
 					<hr>
-					<p>Visit us to shake hands with us</p>
-					<p>Hyderabad, Telangana</p>
+					<p>Visit to shake hands with us</p>
+					<p>SVS MR Palace, Narepally, Hyderabad, Telangana</p>
 			</div>
 		</div>
 </div>
@@ -70,17 +67,47 @@
 					<hr>
 					<p>Connect and Get in touch with us</p>
 					<div class="social">
-						<a href=""><img src="{% static 'Images/facebook.png' %}"></a>
-						<a href=""><img src="{% static 'Images/instagram.png' %}"></a>
-						<a href=""><img src="{% static 'Images/linkedin.png' %}"></a>
+						 <a href="https://www.facebook.com/Nandi-Tractors-103700834846465"><img src="{% static 'Images/facebook.png' %}" class="social-links"></a>
+
+                         <a href="https://www.instagram.com/nanditractors/"><img src="{% static 'Images/instagram.png' %}" class="social-links"></a>
+
+                         <a href="https://www.linkedin.com/in/nandi-tractors-2106301b7/"><img src="{% static 'Images/linkedin.png' %}" class="social-links"></a>
+
+                         <a href="https://twitter.com/NandiTractors?s=20"><img src="{% static 'Images/twitter.png' %}" class="social-links"></a>
 					</div>
 			</div>
 		</div>
 </div>
 </div>
 
+
 </div>
 </div>
+
+<div class="contact-form">
+	<div class="container">
+		<h3 class="trachead">Let's Talk &period; &period; &period;</h3>
+
+		<form action="{ urls 'contact'}" method="POST">
+			<div class="form-group">
+			<div class="row">
+				<div class="col-6">
+					<label>Name:</label>
+					<input type="text" name="contact_name" class="form-control">
+				</div>
+				<div class="col-6">
+					<label>E-mail:</label>
+					<input type="e-mail" name="contact_mail" class="form-control">
+				</div>
+			</div>
+			<label>Message:</label>
+			<textarea class="form-control" name="message" rows="4"></textarea>
+			<input type="submit" value="Submit" class="btn btn-warning" style="font-family: 'Spartan',sans-serif;margin-top: 20px;border-radius: 20px;padding-left: 15px;padding-right: 15px;padding-top: 10px;padding-bottom: 10px;"> 
+		</div>
+		</form>
+	</div>
+</div>
+
 
 
 {% endblock %}
